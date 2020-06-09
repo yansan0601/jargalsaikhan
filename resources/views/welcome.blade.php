@@ -1,22 +1,6 @@
-<!DOCTYPE html> 
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Event4 - Responsive Marketing Landing Pages</title>
-      <meta name="description" content="Responsive Marketing Landing Pages">
-      <meta name="author" content="">
-      <meta name="keywords" content="">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-      <link rel="stylesheet" type="text/css" href="css/style.css"/>
-      <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.css"/>
-      <link rel="stylesheet" type="text/css" href="css/animate.css"/>
-      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600%7CRaleway:300,400,500,600,700,800" rel="stylesheet">
-   </head>
-   <body>
+@extends('layouts.user.app')
+
+@section('content')
       <div class="preloader">
          <div class="loader"></div>
       </div>
@@ -30,14 +14,14 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
                         <div class="collapse navbar-collapse" id="navbarNav">
                            <ul class="navbar-nav ntNavbar">
-                              <li><a href="#home" class="scroll active">Home</a></li>
-                              <li><a href="#about" class="scroll">About</a></li>
-                              <li><a href="#speakers" class="scroll">Speakers</a></li>
-                              <li><a href="#schedule" class="scroll">Schedule</a></li>
-                              <li><a href="#sponsorship" class="scroll">Sponsorship</a></li>
-                              <li><a href="#sponsors" class="scroll">Sponsors</a></li>
+                              <li><a href="#home" class="scroll active">Эхлэл</a></li>
+                              <li><a href="#about" class="scroll">Намтар</a></li>
+                              <li><a href="#speakers" class="scroll">Мэдээ</a></li>
+                              <li><a href="#schedule" class="scroll">Бичлэг</a></li>
+                              <li><a href="#schedule" class="scroll">Холбоо барих</a></li>
+                              {{-- <li><a href="#sponsors" class="scroll">Sponsors</a></li>
                               <li><a href="#register" class="scroll">Register</a></li>
-                              <li><a href="#contact" class="scroll">Contact</a></li>
+                              <li><a href="#contact" class="scroll">Contact</a></li> --}}
                            </ul>
                         </div>
                      </nav>
@@ -47,166 +31,135 @@
          </header>
          <div class="container">
             <div class="mainTitle">
-               <div class="location"><span class="where"><i class="fas fa-map-marker-alt"></i> <b>where</b> New York</span> <span class="when"><i class="fas fa-calendar-alt"></i> <b>when</b> 05, May 2019</span></div>
-               <h1 class="cd-headline clip is-full-width"><span>2019 Business </span> <span class="cd-words-wrapper"> <b class="is-visible">Conference</b> <b>Workshop</b> </span></h1>
+               <h1 class="cd-headline clip is-full-width"><span>АЖ ҮЙЛДВЭРИЙН ГАВЪЯАТ АЖИЛТАН, МОНГОЛ УЛСЫН ЗӨВЛӨХ ИНЖЕНЕР, ШИЛДЭГ ЗОХИОН БҮТЭЭГЧ</span> <span class="cd-words-wrapper"> <b class="is-visible">Д.Жаргалсайхан</b> </span></h1>
                <span class="line"></span> 
-               <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration believable</p>
-               <a href="#speakers" class="btn btn-ntPrimaryFull ntMedium scroll">Our Speakers</a> <a href="#register" class="btn btn-ntPrimaryBorder ntMedium scroll">Register Now</a>
+               <p>2020 оны УИХ-н сонгуулийн 26-р тойрог, Баянгол дүүргээс нэр дэвшигч</p>
             </div>
          </div>
          <a href="#about" class="scroll ntWayPoint"><i class="fas fa-angle-down bounce animated"></i></a>
       </div>
       <div class="ntInnerSection ntAbout" id="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h2>About event</h2>
-                  <span class="btm-bar"></span> 
-                  <p class="col-md-10 text-center block-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit dan minim veniam, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               </div>
-               <div class="col-md-4 ntAboutThumb">
-                  <img src="images/about-1.jpg" alt="about-1"/> 
-                  <h3>Stay ahead</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-               </div>
-               <div class="col-md-4 ntAboutThumb">
-                  <img src="images/about-2.jpg" alt="about-2"/> 
-                  <h3>Opportunities</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-               </div>
-               <div class="col-md-4 ntAboutThumb">
-                  <img src="images/about-3.jpg" alt="about-3"/> 
-                  <h3>New thinking</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa.</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="ntInnerSection ntCounter_type">
-         <div class="container">
+        <div class="container">
+           <div class="row">
             <div class="col-md-12">
-               <div class="row">
-                  <div class="col-md-3">
-                     <i class="fa fa-users"></i> 
-                     <h3><span class="ntCounterNumber">20</span>k</h3>
-                     <span class="ntCounterTitle">PARTICIPANTS</span> 
-                  </div>
-                  <div class="col-md-3">
-                     <i class="fab fa-dropbox"></i> 
-                     <h3><span class="ntCounterNumber">50</span>k</h3>
-                     <span class="ntCounterTitle">TOPICS</span>
-                  </div>
-                  <div class="col-md-3">
-                     <i class="fa fa-power-off"></i> 
-                     <h3><span class="ntCounterNumber">550</span></h3>
-                     <span class="ntCounterTitle">SESSIONS</span>
-                  </div>
-                  <div class="col-md-3">
-                     <i class="fa fa-microphone"></i> 
-                     <h3><span class="ntCounterNumber">10</span>+</h3>
-                     <span class="ntCounterTitle">SPEAKERS</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+                <h2>Намтар</h2>
+                <span class="btm-bar"></span> 
+                <p class="col-md-12 text-center block-center">Даньдай овогтой Жаргалсайхан
+                  1964 онд Ховд аймгийн Булган суманд төрсөн. Ам бүл 7, эхнэр хүүхдүүдийн хамт амьдардаг. 1973-1983 онд Ховд аймгийн Булган сумын 10 жилийн дунд сургууль 1983-1988 онд Чехословак улсын Тээвэр харилцаа...</p>
+             </div>
+              <div class="col-md-4 ntAboutThumb">
+                 <img src="images/about-1.jpg" alt="about-1"/> 
+                 <h3>ЗАЛУУЧУУДАА ДЭМЖЬЕ</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+              </div>
+              <div class="col-md-4 ntAboutThumb">
+                 <img src="images/about-2.jpg" alt="about-2"/> 
+                 <h3>АЖ ҮЙЛДВЭРЭЭ ХӨГЖҮҮЛЬЕ</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+              </div>
+              <div class="col-md-4 ntAboutThumb">
+                 <img src="images/about-3.jpg" alt="about-3"/> 
+                 <h3>ШИНЭ ИРЭЭДҮЙ</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa.</p>
+              </div>
+           </div>
+        </div>
+     </div>
+      <div class="ntInnerSection ntRegister" id="register">
+        <a href="#register" class="scroll ntWayPoint"> <i class="fas fa-angle-down"></i> </a> 
+        <div class="ntRegisterTitle">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <h3><b>ONLY 300 AVAILABLE SEATS </b> Register early to guarantee your attendance </h3>
+                    <span class="btm-bar-white"></span> 
+                    <p>This is an exclusive event for professionals. Complete the online form to register your interest and you will receive an email acknowledging your registration.</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
       <div class="ntInnerSection ntSpeaker" id="speakers">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Keynote Speakers</h2>
-                  <span class="btm-bar"></span> 
-                  <div class="col-md-10 ntSubTitle block-center">Event4 2018 gathered the brightest minds in the tech world. Learn new skills and get insights from experts and practitioners from all around! </div>
+                  <h2>Мэдээ</h2>
+                  <span class="btm-bar"></span>
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="ntOurSpeakersItem">
-                     <img src="images/speaker-1.jpg" alt="speaker-1"/> 
+                     <img src="images/speaker-1.jpg" data-toggle="modal" data-target="#myModal">
                      <div class="caption">
-                        <div class="ntSuperTitle">Edilta</div>
-                        <h3>David </h3>
-                     </div>
-                     <div class="overlay">
-                        <div class="ntSuperTitle">Edilta</div>
-                        <h3>David </h3>
-                        <div class="ntSubTitle">Founder</div>
-                        <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="ntSuperTitle">Edge</div>
+                        <h3>Marak</h3>
                      </div>
                   </div>
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="ntOurSpeakersItem">
-                     <img src="images/speaker-2.jpg" alt="speaker-2"/> 
+                     <img src="images/speaker-2.jpg" data-toggle="modal" data-target="#myModal">
                      <div class="caption">
-                        <div class="ntSuperTitle">Payol</div>
-                        <h3>Mark</h3>
-                     </div>
-                     <div class="overlay">
-                        <div class="ntSuperTitle">Payol</div>
-                        <h3>Mark</h3>
-                        <div class="ntSubTitle">Design Lead</div>
-                        <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="ntSuperTitle">Edge</div>
+                        <h3>Marak</h3>
                      </div>
                   </div>
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="ntOurSpeakersItem">
-                     <img src="images/speaker-3.jpg" alt="speaker-3"/> 
+                     <img src="images/speaker-3.jpg" data-toggle="modal" data-target="#myModal">
                      <div class="caption">
-                        <div class="ntSuperTitle">Interactive</div>
-                        <h3>Peterson</h3>
-                     </div>
-                     <div class="overlay">
-                        <div class="ntSuperTitle">Interactive</div>
-                        <h3>Peterson</h3>
-                        <div class="ntSubTitle">Art Director</div>
-                        <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="ntSuperTitle">Edge</div>
+                        <h3>Marak</h3>
                      </div>
                   </div>
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="ntOurSpeakersItem">
-                     <img src="images/speaker-4.jpg" alt="speaker-4"/> 
+                     <img src="images/speaker-4.jpg" data-toggle="modal" data-target="#myModal">
                      <div class="caption">
-                        <div class="ntSuperTitle">Cards</div>
-                        <h3>Barnesn</h3>
-                     </div>
-                     <div class="overlay">
-                        <div class="ntSuperTitle">Cards</div>
-                        <h3>Barnesn</h3>
-                        <div class="ntSubTitle">Design Director</div>
-                        <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="ntSuperTitle">Edge</div>
+                        <h3>Marak</h3>
                      </div>
                   </div>
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="ntOurSpeakersItem">
-                     <img src="images/speaker-5.jpg" alt="speaker-5"/> 
+                     <img src="images/speaker-5.jpg" data-toggle="modal" data-target="#myModal">
                      <div class="caption">
-                        <div class="ntSuperTitle">DevTeam</div>
-                        <h3>Max</h3>
-                     </div>
-                     <div class="overlay">
-                        <div class="ntSuperTitle">DevTeam</div>
-                        <h3>Max</h3>
-                        <div class="ntSubTitle">iOS Developer</div>
-                        <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="ntSuperTitle">Edge</div>
+                        <h3>Marak</h3>
                      </div>
                   </div>
                </div>
                <div class="col-12 col-md-6 col-lg-4">
                   <div class="ntOurSpeakersItem">
-                     <img src="images/speaker-6.jpg" alt="speaker-6"/> 
+                     <img src="images/speaker-6.jpg" data-toggle="modal" data-target="#myModal">
                      <div class="caption">
-                        <div class="ntSuperTitle">Chipper</div>
-                        <h3>Donald</h3>
-                     </div>
-                     <div class="overlay">
-                        <div class="ntSuperTitle">Chipper</div>
-                        <h3>Donald</h3>
-                        <div class="ntSubTitle">Founder</div>
-                        <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div class="ntSuperTitle">Edge</div>
+                        <h3>Marak</h3>
                      </div>
                   </div>
+               </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+               <div class="modal-dialog modal-xl">
+               <div class="modal-content">
+               
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                     <h4 class="modal-title">Modal Heading</h4>
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <center><img src="images/speaker-1.jpg" style="width: 400px; height: 400px"></center>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                     Modal body..
+                  </div>
+                  
+               </div>
                </div>
             </div>
          </div>
@@ -214,13 +167,49 @@
       <div class="ntInnerSection ntSchedule" id="schedule">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <h2>Conference Schedule</h2>
-                  <span class="btm-bar"></span> 
-                  <div class="col-md-10 ntSubTitle block-center">Below you'll find the schedule for Event4 2018. We'll keep this page regularly updated with all new speakers and sessions, so be sure to keep checking in! </div>
+               <div class="col-sm-12">
+                  <h2>Бичлэг</h2>
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner">
+                        <div class="item active">
+                           <div class="row">
+                              <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgxr1H79UqA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                              </div>
+                              <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/LMQxDocJFLg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="item">
+                           <div class="row">
+                              <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgxr1H79UqA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                              </div>
+                              <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/LMQxDocJFLg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                   
+                     <!-- Left and right controls -->
+                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                       <span class="glyphicon glyphicon-chevron-left blue"></span>
+                       <span class="sr-only">Өмнөх</span>
+                     </a>
+                     <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                       <span class="glyphicon glyphicon-chevron-right blue"></span>
+                       <span class="sr-only">Дараагийнх</span>
+                     </a>
+                   </div>
+                  
                </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                <div class="col-md-12">
                   <ul class="nav nav-tabs ntScheduleTab">
                      <li><a data-toggle="tab" href="#day01" class="active">Day 01</a></li>
@@ -413,10 +402,10 @@
                      </div>
                   </div>
                </div>
-            </div>
+            </div> --}}
          </div>
       </div>
-      <div class="ntInnerSection ntSponsorship" id="sponsorship">
+      {{-- <div class="ntInnerSection ntSponsorship" id="sponsorship">
          <a href="#sponsorship" class="scroll ntWayPoint"><i class="fas fa-angle-down"></i> </a> 
          <div class="container">
             <div class="row">
@@ -481,8 +470,8 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="ntInnerSection ntSponsors" id="sponsors">
+      </div> --}}
+      {{-- <div class="ntInnerSection ntSponsors" id="sponsors">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -552,8 +541,8 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="ntInnerSection ntRegister" id="register">
+      </div> --}}
+      {{-- <div class="ntInnerSection ntRegister" id="register">
          <a href="#register" class="scroll ntWayPoint"> <i class="fas fa-angle-down"></i> </a> 
          <div class="ntRegisterTitle">
             <div class="container">
@@ -566,8 +555,8 @@
                </div>
             </div>
          </div>
-      </div>
-      <div class="ntInnerSection ntRegisterForm">
+      </div> --}}
+      {{-- <div class="ntInnerSection ntRegisterForm">
          <div class="container">
             <h2>Register Now</h2>
             <span class="btm-bar"></span> 
@@ -594,8 +583,8 @@
                </div>
             </form>
          </div>
-      </div>
-      <div class="ntContact" id="contact">
+      </div> --}}
+      {{-- <div class="ntContact" id="contact">
          <div class="ntContactDetails">
             <h2>Copenhagen,<br>Conference <br>hall</h2>
             <span class="line"></span> 
@@ -615,8 +604,8 @@
                <img src="images/curve-right.svg" class="ntSubscribeRight" alt="curve-right"/>
             </div>
          </div>
-      </div>
-      <div class="ntInnerSection ntCommunity">
+      </div> --}}
+      {{-- <div class="ntInnerSection ntCommunity">
          <div class="container">
             <div class="col-md-12">
                <h2>Join Our Community</h2>
@@ -632,30 +621,24 @@
                </ul>
             </div>
          </div>
-      </div>
-      <footer class="ntInnerSection">
+      </div> --}}
+      <footer class="ntInnerSection" style="background-color: #f87b07">
          <div class="container">
             <div class="col-md-12">
-               <div class="row">
-                  <div class="col-md-2 col-lg-1">
-                     <nav class="footnav">
-                        <ul>
-                           <li><a href="#0"> About</a></li>
-                           <li><a href="#0"> Contact</a></li>
-                           <li><a href="#0"> Privacy</a></li>
-                           <li><a href="#0"> Terms</a></li>
-                        </ul>
-                     </nav>
+               <div class="row">                  
+                  <div>
+                     <h3 style="color: white">Холбоо барих</h3><br>
+                     
+                     <div class="row">
+                        <div class="col-sm-12" style="color: white"><span class="glyphicon glyphicon-map-marker"></span> Монгол улс, Улаанбаатар хот</div><br><br>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-10" style="color: white"><span class="glyphicon glyphicon-earphone"></span> +976 99117292</div><br><br>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-12" style="color: white"><span class="glyphicon glyphicon-envelope"></span> jargalsaikhan@president.mn</div>
+                      </div>
                   </div>
-                  <div class="col-md-4 col-lg-3">
-                     <h4>Event4</h4>
-                     <p>A homegrown design studio from Berlin. We create beatuful identities & amazing logo for modern business.</p>
-                  </div>
-                  <div class="col-md-3 col-lg-6">
-                     <h4>©</h4>
-                     <p>Copyright 2018. All rights reserved.<br><b>Event4</b></p>
-                  </div>
-                  <div class="col-md-3 col-lg-2"><a href="#0"> <img class="foot-logo" alt="Event4" title="Event4" src="images/foot-logo.png"/> </a></div>
                </div>
             </div>
          </div>
@@ -670,5 +653,4 @@
       <script src="js/map.js"></script>
       <script src="js/parallax.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKpoDj35ccY2QKwMkJKD1qsV9PtOiV5Ss&callback=myMap"></script> 
-   </body>
-</html>
+@endsection

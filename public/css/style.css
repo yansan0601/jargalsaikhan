@@ -33,7 +33,7 @@ a {
 	-moz-transition: all .3s;
 	-webkit-transition: all .3s;
 	-ms-transition: all .3s;
-	color: #ed1c94;
+	color: #f87b07;
 }
 
 a:hover {
@@ -329,29 +329,28 @@ span.btm-bar-white {
 }
 
 .ntNavbar li {
-	position: relative
+	position: relative;
 }
 
 .ntNavbar li a {
-	color: #fff;
+	color: #f87b07;
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 15px;
 	margin: 0 15px;
-	display: block;
 	position: relative;
 }
 
 .ntNavbar li a.active,
 .ntNavbar li a:hover {
-	color: #ff0092;
+	color: #f87b07;
 	text-shadow: none;
 }
 
 .ntNavbar li a:before {
 	content: "";
 	position: absolute;
-	background-color: #ed1c94;
+	background-color: #f87b07;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -390,7 +389,7 @@ span.btm-bar-white {
 }
 
 .fixed .ntNavbar li a {
-	color: #242732;
+	color: #f87b07;
 }
 
 .fixed #logo_home a {
@@ -400,7 +399,7 @@ span.btm-bar-white {
 }
 
 .ntInnerSection {
-	padding-top: 80px;
+	padding-top: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
 	position: relative;
@@ -443,7 +442,7 @@ span.btm-bar-white {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url('../images/header-area.jpg');
+	background-image: url('../images/background.png');
 	background-size: cover;
 	background-position: center;
 	border-bottom: 4px solid #fff;
@@ -468,7 +467,7 @@ span.btm-bar-white {
 	bottom: 0;
 	right: 0;
 	top: 0;
-	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	background-image: url('../images/header-area.jpg');
 	opacity: 0.6;
 }
 
@@ -494,12 +493,12 @@ span.btm-bar-white {
 
 .ntHome .ntWayPoint i {
 	text-align: center;
-	color: #ed1c94;
+	color: #f87b07;
 	top: 15px;
 }
 
 span.line {
-	border-top: 2px solid #ed1c94;
+	border-top: 2px solid #f87b07;
 	display: block;
 	margin-top: 15px;
 }
@@ -510,7 +509,7 @@ span.line {
 .mainTitle {
 	z-index: 2;
 	position: absolute;
-	color: #fff;
+	color: #f87b07;
 	width: 520px;
 	bottom: 25%;
 }
@@ -554,9 +553,9 @@ span.line {
 }
 
 .mainTitle h1 {
-	color: #ffffff;
+	color: #f87b07;
 	font-weight: 600;
-	font-size: 45px;
+	font-size: 23px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	line-height: 50px;
@@ -567,13 +566,13 @@ span.line {
 .mainTitle p {
 	font-weight: 300;
 	margin-top: 15px;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 24px;
 	text-shadow: 1px 1px 0px #0000001a;
 }
 
 .mainTitle h1 b {
-	color: #ffffff;
+	color: #f87b07;
 }
 
 .mainTitle .btn-ntPrimaryBorder {
@@ -662,7 +661,7 @@ span.line {
 }
 
 .ntAboutThumb {
-	text-align: left;
+	text-align: center;
 	margin-top: 40px;
 }
 
@@ -791,7 +790,7 @@ span.line {
 .ntOurSpeakersItem .ntSuperTitle {
 	text-transform: uppercase;
 	font-size: 10px;
-	color: #6a11cb;
+	color: #f87b07;
 	margin-bottom: 2px;
 	letter-spacing: 1.5px;
 	text-align: left;
@@ -819,7 +818,7 @@ span.line {
 	clear: both;
 	width: 100%;
 	display: block;
-	border-bottom: 2px solid #ff0092;
+	border-bottom: 2px solid #f87b07;
 	margin-top: 3px;
 }
 
@@ -1183,7 +1182,7 @@ ul.ntScheduleTab li a {
 /** * 10.0 Register Now (Section) * ----------------------------------------------------------------------------- */
 
 .ntRegister {
-	background: #4842e3;
+	background: #f87b07;
 	z-index: 1;
 	text-align: center;
 	color: #fff;
@@ -1398,7 +1397,7 @@ span.error:after {
 	position: relative;
 }
 
-.ntSubscribe:before {
+/* .ntSubscribe:before {
 	Content: '';
 	background-color: #4842e3;
 	position: absolute;
@@ -1406,9 +1405,9 @@ span.error:after {
 	width: 25%;
 	height: 100%;
 	bottom: 0;
-}
+} */
 
-.ntSubscribe:after {
+/* .ntSubscribe:after {
 	Content: '';
 	background-color: #4842e3;
 	position: absolute;
@@ -1416,7 +1415,7 @@ span.error:after {
 	width: 25%;
 	height: 100%;
 	bottom: 0;
-}
+} */
 
 .ntSubscribe input[type=email] {
 	width: 100%;
@@ -1617,11 +1616,11 @@ footer .foot-logo {
 		width: 70%;
 	}
 	.mainTitle h1 {
-		font-size: 35px;
+		font-size: 17px;
 		line-height: 32px;
 	}
 	.cd-headline.clip .cd-words-wrapper {
-		font-size: 55px;
+		font-size: 40px;
 	}
 	.mainTitle span.where,
 	.mainTitle span.when {
@@ -1873,4 +1872,102 @@ footer .foot-logo {
 	.btn-ntPrimaryFull {
 		margin-bottom: 15px;
 	}
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.blue{color:#0000ff}
+
+.block-23 ul li .icon {
+    width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+	color: white;
+}
+.block-23 ul li .icon, .block-23 ul li .text {
+    display: table-cell;
+    vertical-align: top;
+}
+.block-23 ul li span {
+    color: rgba(255, 255, 255, 0.7);
+}
+.block-23 ul li, .block-23 ul li > a {
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
