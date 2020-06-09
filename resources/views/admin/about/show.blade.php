@@ -26,7 +26,7 @@
                     </div>
 
                     <div class="card-footer text-right">
-                        <form action="{{ route('about.destroy', $about->id) }}" method="about">
+                        <form action="{{ route('about.destroy', $about->id) }}" method="post">
                             <a class= "btn btn-info" href ="{{ route('about.edit',$about->id) }}"> Засах </a>
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}

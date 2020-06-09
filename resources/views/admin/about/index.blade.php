@@ -28,17 +28,18 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="row list-header">
-                      <div class="col-sm-11">Намтар</div>
+                      <div class="col-sm-11"></div>
                       <div class="col-sm-1"></div>
                     </div>
 
                     @foreach($about as $about)
-                      <a href="{{route('about.edit',$about->id)}}">
+                      <a href="{{route('about.show',$about->id)}}">
                         <div class="row list">
                           <div class="col-sm-11">{{$about->body}}</div>
                           <div class="col-sm-1"><i class="fa fa-angle-right"></i></div>
                         </div>
                       </a>
+                      <hr/>
                     @endforeach
                   </div>
                 </div>

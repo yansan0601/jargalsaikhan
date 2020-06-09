@@ -81,7 +81,7 @@ class AboutController extends Controller
             'body'=>'required'
         ]);
         $about->update($request->all());
-        return redirect()->route('about.index')->with('message','Edit Coupon Already!');
+        return redirect()->route('about.index')->with('message','Намтар амжилттай засагдлаа');
     }
 
     /**
@@ -90,9 +90,9 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(about $about)
+    public function destroy(About $about)
     {
         $about->delete();
-        return redirect()->route('about.index')->with('message','амжилттай устгагдлаа');
+        return redirect()->route('about.index')->with('message','Намтар амжилттай устгагдлаа');
     }
 }
