@@ -43,6 +43,7 @@
                           <div class="col-sm-1"><i class="fa fa-angle-right"></i></div>
                         </div>
                       </a>
+                      <hr/>
                     @endforeach
                   </div>
                 </div>
@@ -51,6 +52,7 @@
               <div class="card-footer clearfix text-xs-center">
                 <div class="pagination__wrapper">
                   <ul class="pagination">
+                  {{ $posts->appends(['sort' => 'votes'])->links() }}
                   </ul>
                 </div>
               </div>
