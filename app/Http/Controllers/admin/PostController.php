@@ -38,14 +38,14 @@ class PostController extends Controller
         $this->validate($request,[
             'title'=>'required',
             'body'=>'required',
-            'expiry_date'=>'required|date'
         ]);
         $input_data=$request->all();
         if(empty($input_data['status'])){
             $input_data['status']=0;
         }
-        Coupon_model::create($input_data);
-        return back()->with('message','Add Coupon Already');
+        Post::create($input_data);
+        return redirect()->route('posts.index')->with('message','Мэдээ нэмэгдлээ');
+        
     }
 
     /**
