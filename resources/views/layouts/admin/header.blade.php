@@ -14,9 +14,9 @@
 </nav>
 
 <aside class="main-sidebar sidebar-dark-info elevation-1 darkBlue">
-  <a>
-    <span class="brand-text font-weight-light"><b>Jargalsaikhan.mn</b></span>
-    </a>
+  <a href="{{route('admin_home')}}" class= 'brand-link text-center'>
+    <span class="brand-text font-weight-light"><b>Админ</b><p>удирдах цонх</p></span>
+  </a>
 
   <div class="sidebar">
     <nav>
