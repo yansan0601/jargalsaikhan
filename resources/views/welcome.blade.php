@@ -19,8 +19,8 @@
                               <li><a href="#speakers" class="scroll">Мэдээ</a></li>
                               <li><a href="#schedule" class="scroll">Бичлэг</a></li>
                               <li><a href="#contact" class="scroll">Холбоо барих</a></li>
-                              {{-- <li><a href="#sponsors" class="scroll">Sponsors</a></li>
-                              <li><a href="#register" class="scroll">Register</a></li>
+                              <li><a href="/login">Нэвтрэх</a></li>
+                              {{--<li><a href="#register" class="scroll">Register</a></li>
                               <li><a href="#contact" class="scroll">Contact</a></li> --}}
                            </ul>
                         </div>

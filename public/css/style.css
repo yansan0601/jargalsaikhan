@@ -4,8 +4,58 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.85em;
-	font-family: 'Poppins', sans-serif;
 	color: #242732;
+}
+
+.body1{
+	background-color: #f3f3f3;
+}
+
+.h2{
+	font-family: 'Roboto', sans-serif;
+	color: #ED4C67;
+	font-size: 20px;
+}
+
+.card{
+	background-color: #fff;
+	height: 230px;
+    width: 280px; 
+    border-radius: 8px; 
+	margin-left: 520px; 
+    margin-top: 150px;
+    text-align: center;
+}
+
+.form-control{
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid gray;
+	margin-top: -20px;
+	height: 30px; 
+    width: 200px; 
+    font-size: 15px;
+    border-radius: 3px;
+}
+.form-control1{
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid gray;
+	margin-top: 20px;
+	height: 30px; 
+    width: 200px; 
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.btn-primary{
+	margin-top: -10px;
+	border: 1px solid #ED4C67;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	background-color: #ED4C67; 
+	width: 200px; 
+	height: 40px; 
+	border-radius: 3px; 
+	color: #fff; 
 }
 
 h1,
@@ -1603,6 +1653,56 @@ footer .foot-logo {
 /* Laptop */
 
 @media screen and (max-width: 1024px) {
+
+	.body1{
+		
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 450px;
+		width: 690px; 
+		border-radius: 8px; 
+		margin-left: 150px; 
+		margin-top: 100px;
+		text-align: center;
+	}
+	.form-control{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 80px; 
+		width: 430px; 
+		font-size: 50px;
+		border-radius: 3px;
+		margin-top: 20px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 80px; 
+		width: 430px; 
+		font-size: 50px;
+		border-radius: 3px;
+		margin-top: 40px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		cursor: pointer;
+		width: 430px; 
+		height: 80px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 40px;
+	}
+
+	.h2{
+		font-family: 'Times New Roman', Times, serif;
+		color: #ED4C67;
+		font-size: 60px;
+	}
 	.cd-nav-trigger {
 		display: block;
 	}
@@ -1712,7 +1812,106 @@ footer .foot-logo {
 
 /* Tablet (portrait) */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
+	.body1{
+		
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 420px;
+		width: 600px; 
+		border-radius: 8px; 
+		margin-left: 80px; 
+		margin-top: 100px;
+		text-align: center;
+	}
+	.form-control{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 60px; 
+		width: 400px; 
+		font-size: 40px;
+		border-radius: 3px;
+		margin-top: 20px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 60px; 
+		width: 400px; 
+		font-size: 40px;
+		border-radius: 3px;
+		margin-top: 40px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		cursor: pointer;
+		width: 400px; 
+		height: 60px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 35px;
+	}
+
+	.h2{
+		font-family: 'Roboto', sans-serif;
+		color: #ED4C67;
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.body1{
+		width: 360px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 280px;
+		width: 315px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 30px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 30px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 20px;
+	}
+
+	.h2{
+		color: #ED4C67;
+		font-size: 30px;
+	}
 	/* community */
 	.ntCommunity ul.ntSocialIcons {
 		width: 83%;
@@ -1835,11 +2034,198 @@ footer .foot-logo {
 	}
 }
 
+@media screen and (max-width: 414px) {
+	.body1{
+		
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 280px;
+		width: 360px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		margin-top: -20px;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 20px;
+	}
+
+	.h2{
+		font-family: 'Roboto', sans-serif;
+		color: #ED4C67;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.body1{
+		width: 360px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 280px;
+		width: 315px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		margin-top: -20px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 20px;
+	}
+
+	.h2{
+		color: #ED4C67;
+		font-size: 30px;
+	}
+}
+
 
 /* Mini-Mobile */
 
+@media screen and (max-width: 360px) {
+	.body1{
+		width: 360px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 280px;
+		width: 315px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		margin-top: -30px;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 18px;
+	}
+
+	.h2{
+		color: #ED4C67;
+		font-size: 25px;
+	}
+}
+
 @media screen and (max-width: 320px) {
 	/* main title */
+	.body1{
+		width: 320px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 250px;
+		width: 280px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 100px;
+		text-align: center;
+	}
+	.form-control{
+		height: 30px; 
+		width: 200px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		margin-top: 20px;
+		height: 30px;
+		width: 200px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		background-color: #ED4C67; 
+		width: 200px; 
+		height: 40px; 
+		border-radius: 3px; 
+		color: #fff; 
+		font-family: bold;
+	}
+
+	.h2{
+		font-size: 20px;
+	}
 	.mainTitle {
 		width: 88%;
 		left: 17px;
