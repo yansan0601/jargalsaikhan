@@ -18,7 +18,7 @@
               <div class="card-header">
                 <h5 class="card-title">Намтар</h5>
                 <div class="card-tools">
-                  <a class="btn btn-danger" >
+                  <a class="btn btn-danger" href ="{{route('about.create')}}" >
                     <i class="fa fa-plus"></i> Нэмэх
                   <a>
                 </div>
