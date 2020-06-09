@@ -19,9 +19,9 @@ Route::get('/', function () {
 
 Route::get('admin/', 'admin\PostController@index')->name('admin_home');
 Route::group([
-    'namespace' => 'admin',
+    'namespace' => 'admin', 
     'prefix' => 'admin'
 ], function(){
     Route::resource('/posts','PostController');
-    Route::get('/about','AboutController@index');
+    Route::resource('/about','AboutController');
 });
