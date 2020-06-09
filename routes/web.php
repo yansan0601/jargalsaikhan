@@ -21,3 +21,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/loginme','loginController@login' );
+
+Route::get('admin/', 'admin\PostController@index')->name('admin_home');
+Route::group([
+    'namespace' => 'admin', 
+    'prefix' => 'admin'
+], function(){
+    Route::resource('/posts','PostController');
+    Route::resource('/about','AboutController');
+});
