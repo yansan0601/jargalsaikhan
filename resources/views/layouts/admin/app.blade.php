@@ -4,10 +4,9 @@
     <title>@yield('title','| Admin')</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{asset('master/css/style.css')}}" />
-    <link rel="stylesheet" href="{{asset('master/vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('master/vendors/css/vendor.bundle.base.css')}}" />
-    <link rel="stylesheet" href="{{asset('master/vendors/vendors/css/vendor.bundle.addons.css')}}" />
+    <link rel="stylesheet" href="{{asset('master/plugins/bootstrap/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('master/plugins/font-awesome/css/font-awesome.css')}}" />
+    <link rel="stylesheet" href="{{asset('master/dist/css/adminlte.min.css')}}" />
 </head>
 <body>
 
@@ -18,8 +17,8 @@
     @yield('content')
 </div>
 </body>
-<script src="{{asset('master/js/jquery.js')}}"> </script>
-<script src="{{asset('master/js/chart.js')}}"> </script>
-<script src="{{asset('master/js/dashboard.js')}}"> </script>
+<script src="{{asset('master/plugins/jquery/jquery.js')}}"> </script>
+<script src="{{asset('master/plugins/bootstrap/js/bootstrap.min.js')}}"> </script>
+<script src="{{asset('master/dist/js/adminlte.min.js')}}"> </script>
 
 </html>
