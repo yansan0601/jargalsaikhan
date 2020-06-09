@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index()
     {
         $posts= Post::orderBy('created_at','desc')->get();
-        return view('admin.posts.index',compact('posts'));
+        return view('admin/posts.index',compact('posts'));
     }
 
     /**
@@ -54,11 +54,10 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        //
+        return view('admin.posts.show',compact('post'));
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -68,8 +67,8 @@ class PostController extends Controller
     public function edit($id)
     {
         $menu_active=4;
-        $edit_coupons=Coupon_model::findOrFail($id);
-        return view('backEnd.coupon.edit',compact('menu_active','edit_coupons'));
+        $post=Post::findOrFail($id);
+        return view('admin.posts.edit',compact('menu_active','post'));
     }
 
     /**
@@ -101,38 +100,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Post $post)
     {
-        $delete_coupon=Coupon_model::findOrFail($id);
-        $delete_coupon->delete();
-        return back()->with('message','Delete Coupon Already!');
-    }
-    public function applycoupon(Request $request){
-        $this->validate($request,[
-            'coupon_code'=>'required'
-        ]);
-        $input_data=$request->all();
-        $coupon_code=$input_data['coupon_code'];
-        $total_amount_price=$input_data['Total_amountPrice'];
-        $check_coupon=Coupon_model::where('coupon_code',$coupon_code)->count();
-        if($check_coupon==0){
-            return back()->with('message_coupon','Your Coupon Code Not Exist!');
-        }else if($check_coupon==1){
-            $check_status=Coupon_model::where('status',1)->first();
-            if($check_status->status==0){
-                return back()->with('message_coupon','Your Coupon was Disabled!');
-            }else{
-                $expiried_date=$check_status->expiry_date;
-                $date_now=date('Y-m-d');
-                if($expiried_date<$date_now){
-                    return back()->with('message_coupon','Your Coupon was Expired!');
-                }else{
-                    $discount_amount_price=($total_amount_price*$check_status->amount)/100;
-                    Session::put('discount_amount_price',$discount_amount_price);
-                    Session::put('coupon_code',$check_status->coupon_code);
-                    return back()->with('message_apply_sucess','Your Coupon Code was Apply');
-                }
-            }
-        }
+        $post->delete();
+        return redirect()->route('posts.index')->with('message','амжилттай устгагдлаа');
     }
 }
