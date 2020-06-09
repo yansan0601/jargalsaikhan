@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('admin/', 'admin\PostController@index')->name('admin_home');
 Route::group([
     'namespace' => 'admin',
     'prefix' => 'admin'
