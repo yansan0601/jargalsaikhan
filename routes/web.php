@@ -18,9 +18,8 @@ Route::get('/', function () {
 });
 
 Route::group([
-    'namespace' => 'Admin',
+    'namespace' => 'admin',
     'prefix' => 'admin'
-
 ], function(){
     Route::resource('/posts','PostController');
     Route::get('/about','AboutController@index');
