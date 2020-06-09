@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>@yield('title','app')</title>
+    <title>@yield('title','| Admin')</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{asset('master/css/style.css')}}" />
@@ -14,6 +14,7 @@
 
 <!--main-container-part-->
 <div id="content">
+    @include('layouts.admin.header')
     @yield('content')
 </div>
 </body>
