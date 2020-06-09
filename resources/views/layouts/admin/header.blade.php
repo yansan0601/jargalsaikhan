@@ -26,30 +26,30 @@
         </li>
 
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="{{route('posts.index')}}" class="nav-link">
             <i class="nav-icon fa fa-newspaper-o"></i>
             <p>Мэдээ</p>
           </a>
         </li>
 
         <li class="nav-item">
+          <a href="{{route('about.index')}}" class="nav-link">
+            <i class="nav-icon fa fa-user"></i>
+            <p>Намтар</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fa fa-newspaper-o"></i>
-            <p>Мэдээ</p>
+            <i class="nav-icon fa fa-graduation-cap"></i>
+            <p>Боловсрол</p>
           </a>
         </li>
 
         <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="nav-icon fa fa-newspaper-o"></i>
-            <p>Мэдээ</p>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fa fa-newspaper-o"></i>
-            <p>Мэдээ</p>
+            <p>Санал хүсэлт</p>
           </a>
         </li>
         <li class="mt-4 p-2"><a class= "btn btn-sm btn-block btn-danger text-white" >LogOut</a></li>
