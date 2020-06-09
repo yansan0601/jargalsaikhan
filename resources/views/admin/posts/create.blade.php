@@ -7,16 +7,6 @@
     @csrf
   <div class="content-wrapper">
     <div class="content-header p-2"></div>
-    @if ($errors->any())
-    <div class="alert alert-danger">
-        <strong>Whoops!</strong> There were some problems with your input.<br><br>
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-    @endif
     <section class="content news">
       <div class="container-fluid">
         <div class="row">
@@ -26,7 +16,7 @@
                 <h3 class="card-title">Машин нэмэх</h3>
               </div>
               <div class="card-body">
-
+                @include('layouts.admin.errors')
                 <div class="form-group">
                   <label> Гарчиг </label>
                   <input type="text" name="title" class="form-control" placeholder="Гарчиг">
