@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-  
+@section('title','Намтар нэмэх')
 @section('content')
 
 <form action="{{ route('about.store') }}" method="POST">

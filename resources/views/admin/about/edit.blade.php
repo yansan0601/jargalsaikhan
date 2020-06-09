@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-  
+@section('title','Намтар засах')
 @section('content')
 
 <form action="{{ route('about.update',$about->id) }}" method="POST">

@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
- 
+@section('title','Намтар дэлгэрэнгүй')
 @section('content')
 
     <div class="content-wrapper">
@@ -12,7 +12,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                        <h5 class="card-title">Мэдээ дэлгэрэнгүй</h5>
+                        <h5 class="card-title">Намтар дэлгэрэнгүй</h5>
                         </div>
 
                         <div class="card-body p-3">

@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
-  
+@section('title','Мэдээ нэмэх')
 @section('content')
 
    

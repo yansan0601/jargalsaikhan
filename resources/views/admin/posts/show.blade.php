@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
- 
+@section('title','Мэдээ дэлгэрэнгүй')
 @section('content')
 
     <div class="content-wrapper">

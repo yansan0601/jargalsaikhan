@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
- 
+@section('title','Намтар удирдах хэсэг')
 @section('content')
 
   <div class="content-wrapper">
@@ -31,7 +31,6 @@
                       <div class="col-sm-11"></div>
                       <div class="col-sm-1"></div>
                     </div>
-
                     @foreach($about as $about)
                       <a href="{{route('about.show',$about->id)}}">
                         <div class="row list">

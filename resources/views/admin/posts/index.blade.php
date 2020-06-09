@@ -1,5 +1,5 @@
 @extends('layouts.admin.app')
- 
+@section('title','Мэдээ удирдах хэсэг')
 @section('content')
 
   <div class="content-wrapper">
@@ -33,7 +33,7 @@
                       <div class="col-sm-5">Контент</div>
                       <div class="col-sm-1"></div>
                     </div>
-
+                    <hr/>
                     @foreach($posts as $post)
                       <a href="{{route('posts.show',$post->id)}}">
                         <div class="row list">
