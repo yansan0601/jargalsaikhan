@@ -18,8 +18,9 @@
               </div>
               <div class="card-body">
               @include('layouts.admin.errors')
-                <div class="form-group">
-                  <input type="text" name="body" value="{{$about->body}}" class="form-control">
+              <div class="form-group">
+                  <label> Гарчиг </label>
+                  <textarea id="body" name="body">{{$about->body}}</textarea>
                 </div>
               <div class="card-footer text-right">
                 <input type="submit" value= "Засах" class= "btn btn-secondary" %>

@@ -27,3 +27,11 @@
 <script src="{{asset('master/plugins/ckeditor/ckeditor.js')}}"> </script>
 <script src="{{asset('master/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"> </script>
 
+<script src="{{asset('master/ckeditor.js')}}"></script>
+<script>
+    ClassicEditor
+    .create(document.querySelector('#body'))
+    .catch(error=>{
+        console.error(error);
+    });                                             
+</script>

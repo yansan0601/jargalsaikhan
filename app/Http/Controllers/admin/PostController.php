@@ -40,9 +40,6 @@ class PostController extends Controller
             'body'=>'required',
         ]);
         $input_data=$request->all();
-        if(empty($input_data['status'])){
-            $input_data['status']=0;
-        }
         Post::create($input_data);
         return redirect()->route('posts.index')->with('message','Мэдээ нэмэгдлээ');
         

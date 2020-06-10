@@ -34,7 +34,7 @@
                     @foreach($about as $about)
                       <a href="{{route('about.show',$about->id)}}">
                         <div class="row list">
-                          <div class="col-sm-11">{{$about->body}}</div>
+                          <div class="col-sm-11">{!! Str::limit($about->body, 50) !!}</div>
                           <div class="col-sm-1"><i class="fa fa-angle-right"></i></div>
                         </div>
                       </a>

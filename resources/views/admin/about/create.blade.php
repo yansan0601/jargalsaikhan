@@ -17,7 +17,7 @@
               <div class="card-body">
                 @include('layouts.admin.errors')
                 <div class="form-group">
-                  <input type="text" name="body" class="form-control" placeholder="Намтар">
+                  <textarea id="body" name="body"></textarea>
                 </div>
               <div class="card-footer text-right">
                 <input type="submit" value= "Оруулах" class= "btn btn-secondary" %>

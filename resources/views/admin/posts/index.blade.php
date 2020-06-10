@@ -39,7 +39,7 @@
                         <div class="row list">
                           <div class="col-sm-3"></div>
                           <div class="col-sm-3">{{$post->title}}</div>
-                          <div class="col-sm-5">{{$post->body}}</div>
+                          <div class="col-sm-5">{!! Str::limit($post->body, 50) !!}</div>
                           <div class="col-sm-1"><i class="fa fa-angle-right"></i></div>
                         </div>
                       </a>

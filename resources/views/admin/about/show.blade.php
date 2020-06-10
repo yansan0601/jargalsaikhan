@@ -19,7 +19,7 @@
 
                         <div class="row">
                             <div class="col-sm-3">Контент</div>
-                            <div class="col-sm-9">{{$about->body}}</div>
+                            <div class="col-sm-9">{!! $about->body !!}</div>
                         </div>
             
                         <hr/>
