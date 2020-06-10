@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('master/inoicons/form/adminlte.min.css')}}" />
     <link rel="stylesheet" href="{{asset('master/plugins/css/2.0.1/css/inoicons.min.css')}}" />
     <link rel="stylesheet" href="{{asset('master/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('master/custom.css')}}" />
 
 </head>
 <body>

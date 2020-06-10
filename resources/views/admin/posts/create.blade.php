@@ -3,8 +3,9 @@
 @section('content')
 
    
-<form action="{{ route('posts.store') }}" method="POST">
+<form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data" files= "true" >
     @csrf
+    {{csrf_field()}}
   <div class="content-wrapper">
     <div class="content-header p-2"></div>
     <section class="content news">
@@ -17,14 +18,22 @@
               </div>
               <div class="card-body">
                 @include('layouts.admin.errors')
+
+                <div class="form-group">
+                  <label> Зураг </label>
+                  <input type="file" name="image" class="form-control">
+                </div>
+
                 <div class="form-group">
                   <label> Гарчиг </label>
                   <input type="text" name="title" class="form-control" placeholder="Гарчиг">
                 </div>
+
                 <div class="form-group">
-                  <label> Гарчиг </label>
+                  <label> Контент </label>
                   <textarea id="body" name="body"></textarea>
                 </div>
+
               </div>
 
               <div class="card-footer text-right">

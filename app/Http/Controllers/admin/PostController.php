@@ -35,11 +35,18 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $input_data=$request->all();
+
         $this->validate($request,[
             'title'=>'required',
             'body'=>'required',
+            'image'=>'required'
         ]);
-        $input_data=$request->all();
+       
+        $imageName = time().'.'.$request->image->extension();  
+   
+        $request->image->move('images', $imageName);
+        $input_data['image'] = "".$imageName;
         Post::create($input_data);
         return redirect()->route('posts.index')->with('message','Мэдээ нэмэгдлээ');
         

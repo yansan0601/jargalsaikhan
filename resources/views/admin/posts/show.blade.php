@@ -25,7 +25,7 @@
 
                         <div class="row">
                             <div class="col-sm-3">Зураг</div>
-                            <div class="col-sm-9"><%= image_tag(@post.image, class: 'custom-img', width: '50') if @post.image.attached? %></div>
+                            <div class="col-sm-9"> <img src="{{ asset('images/' . $post->image ) }}", style="width:80px;height:80px;">  </div>
                         </div>
 
                         <hr/>
