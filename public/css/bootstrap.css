@@ -94,13 +94,6 @@ h2.h2{
 	font-size: 20px;
 }
 
-.card{
-	box-shadow: 2h0px 20px 10px #aaaaaa;
-	background-color: #fff;
-    border-radius: 8px; 
-    text-align: center;
-}
-
 
 .fa-warning{
 	width: 200px;
@@ -4405,6 +4398,11 @@ input[type="button"].btn-block {
 }
 
 .card {
+  margin-top: 20%;
+  box-shadow: 2h0px 20px 10px #aaaaaa;
+	background-color: #fff;
+  border-radius: 8px; 
+  text-align: center;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -4412,7 +4410,6 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
