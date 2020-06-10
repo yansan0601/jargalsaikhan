@@ -16,13 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Welcome');
 });
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/loginme','loginController@login' );
+// Route::get('/admin','loginController@login' );
 
-Route::get('admin/', 'admin\PostController@index')->name('admin_home');
+Route::get('admin/', 'admin\PostController@index')->name('admin_home')->middleware('auth');
 Route::group([
     'namespace' => 'admin', 
     'prefix' => 'admin'

@@ -1,21 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link  rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 <body class="body1">
-<form method="POST" action="loginme">     
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                <div class="card-header"><h2 class="h2">АДМИН</h2></div>
+
                 <div class="card-body">
-                <div class="card-header"><h2 class="h2">{{ __('АДМИН') }}</h2></div>
+                    <form method="POST" action="{{ route('login') }}">
                         @csrf
+
                         <div class="form-group row">
+
                             <div class="col-md-6">
-                                <input placeholder="Нэр" id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="username" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                            
+                                <input id="email" placeholder="Нэр" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -27,7 +30,7 @@
                         <div class="form-group row">
 
                             <div class="col-md-6">
-                                <input placeholder="Нууц үг" id="password" type="password" class="form-control1 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                <input id="password" placeholder="Нууц үг" type="password" class="form-control1 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -35,9 +38,9 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div><br>
+                        </div>
 
-                        {{--<div class="form-group row">
+                       {{-- <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -51,16 +54,22 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary" name="login" >
+                                <button type="submit" class="btn btn-primary">
                                     {{ __('НЭВТРЭХ') }}
                                 </button>
+
+                                @if (Route::has('password.request'))
+                                    {{--<a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>--}}
+                                @endif
                             </div>
                         </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</form>
-</body>
+</body1>
 @endsection
