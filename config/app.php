@@ -228,5 +228,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    // ... Providers array ...
+    Cohensive\Embed\EmbedServiceProvider::class,
+
+    // ... Aliases array ...
+    'Embed' => Cohensive\Embed\Facades\Embed::class
 
 ];

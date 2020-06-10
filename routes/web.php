@@ -24,4 +24,5 @@ Route::group([
 ], function(){
     Route::resource('/posts','PostController');
     Route::resource('/about','AboutController');
+    Route::resource('/videos','VideoController');
 });
