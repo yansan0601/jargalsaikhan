@@ -1,43 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 <body class="body1">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" style="box-shadow: 10px 10px 5px #aaaaaa; wid">
                 <div class="card-header"><h2 class="h2">АДМИН</h2></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
-                        <div class="form-group row">
-
-                            <div class="col-md-6">
-                                <input id="email" placeholder="Нэр" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-
-                            <div class="col-md-6">
-                                <input id="password" placeholder="Нууц үг" type="password" class="form-control1 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+    
+                        <ul>
+                @foreach ($errors->all() as $error)
+            <li class="fa fa-warning"> {{ $error }} </li>
+        @endforeach
+        </ul>
+    <div class="form-group row">
+    <input id="email" placeholder="Нэр" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>                          
+    </div>
+    <div class="form-group row">
+    <input id="password" placeholder="Нууц үг" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                         </div>
 
                        {{-- <div class="form-group row">

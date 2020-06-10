@@ -18,8 +18,9 @@ body {
 }
 
 .card{
+	box-shadow: 2h0px 20px 10px #aaaaaa;
 	background-color: #fff;
-	height: 230px;
+	height: 300px;
     width: 280px; 
     border-radius: 8px; 
 	margin-left: 520px; 
@@ -45,8 +46,17 @@ body {
     font-size: 15px;
     border-radius: 3px;
 }
+.fa-warning{
+	width: 200px;
+	border-radius: 4px;
+	color: red;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	background-color: #f3f3f3;
+}
 
 .btn-primary{
+	box-shadow: 10px 10px 5px #aaaaaa;
 	margin-top: 20px;
 	border: 1px solid #ED4C67;
 	cursor: pointer;
@@ -1659,7 +1669,7 @@ footer .foot-logo {
 	
 	.card{
 		background-color: #fff;
-		height: 450px;
+		height: 600px;
 		width: 690px; 
 		border-radius: 8px; 
 		margin-left: 150px; 
@@ -1671,7 +1681,7 @@ footer .foot-logo {
 		border: 1px solid gray;
 		height: 80px; 
 		width: 430px; 
-		font-size: 50px;
+		font-size: 35px;
 		border-radius: 3px;
 		margin-top: 20px;
 	}
@@ -1680,7 +1690,7 @@ footer .foot-logo {
 		border: 1px solid gray;
 		height: 80px; 
 		width: 430px; 
-		font-size: 50px;
+		font-size: 35px;
 		border-radius: 3px;
 		margin-top: 40px;
 	}
@@ -1694,13 +1704,18 @@ footer .foot-logo {
 		border: 1px solid #ED4C67;
 		border-radius: 3px; 
 		color: #fff; 
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.h2{
 		font-family: 'Times New Roman', Times, serif;
 		color: #ED4C67;
-		font-size: 60px;
+		font-size: 50px;
+	}
+	.fa-warning{
+		margin-left: 100px;
+		width: 430px;
+		font-size: 30px;
 	}
 	.cd-nav-trigger {
 		display: block;
@@ -1819,7 +1834,7 @@ footer .foot-logo {
 	
 	.card{
 		background-color: #fff;
-		height: 420px;
+		height: 500px;
 		width: 600px; 
 		border-radius: 8px; 
 		margin-left: 80px; 
@@ -1831,7 +1846,7 @@ footer .foot-logo {
 		border: 1px solid gray;
 		height: 60px; 
 		width: 400px; 
-		font-size: 40px;
+		font-size: 25px;
 		border-radius: 3px;
 		margin-top: 20px;
 	}
@@ -1840,7 +1855,7 @@ footer .foot-logo {
 		border: 1px solid gray;
 		height: 60px; 
 		width: 400px; 
-		font-size: 40px;
+		font-size: 20px;
 		border-radius: 3px;
 		margin-top: 40px;
 	}
@@ -1855,6 +1870,10 @@ footer .foot-logo {
 		border-radius: 3px; 
 		color: #fff; 
 		font-size: 35px;
+	}
+
+	.fa-warning{
+		margin-left: 70px;
 	}
 
 	.h2{
@@ -2035,13 +2054,15 @@ footer .foot-logo {
 
 @media screen and (max-width: 414px) {
 	.body1{
+		width: 414px;
+		height: 100%;
 		
 	}
 	
 	.card{
 		background-color: #fff;
-		height: 280px;
-		width: 360px; 
+		height: 320px;
+		width: 370px; 
 		border-radius: 8px; 
 		margin-left: 20px; 
 		margin-top: 150px;
@@ -2082,16 +2103,21 @@ footer .foot-logo {
 		color: #ED4C67;
 		font-size: 30px;
 	}
+	.fa-warning{
+		font-size: 20px;
+		width: 240px;
+		margin-left: 20px;
+	}
 }
 
 @media screen and (max-width: 375px) {
 	.body1{
-		width: 360px;
+		width: 375px;
 	}
 	
 	.card{
 		background-color: #fff;
-		height: 280px;
+		height: 320px;
 		width: 315px; 
 		border-radius: 8px; 
 		margin-left: 20px; 
@@ -2129,6 +2155,11 @@ footer .foot-logo {
 		color: #ED4C67;
 		font-size: 30px;
 	}
+	.fa-warning{
+		margin-left: -5px;
+		width: 240px;
+		font-size: 20px;
+	}
 }
 
 
@@ -2141,7 +2172,7 @@ footer .foot-logo {
 	
 	.card{
 		background-color: #fff;
-		height: 280px;
+		height: 320px;
 		width: 315px; 
 		border-radius: 8px; 
 		margin-left: 20px; 
