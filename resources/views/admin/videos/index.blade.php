@@ -34,8 +34,12 @@
                     @foreach($videos as $video)
                       <a href="{{route('videos.show',$video->id)}}">
                         <div class="row list">
-                          <div class="col-sm-11">{{$video->embed_code}}</div>
-                          <div class="col-sm-1"><i class="fa fa-angle-right"></i></div>
+                          <div class="col-sm-10">
+                            <div class="embed-container-list">
+                              {!!$video->embed_code!!}
+                            </div>  
+                          </div>
+                          <div class="col-sm-2">Edit</div>
                         </div>
                       </a>
                       <hr/>

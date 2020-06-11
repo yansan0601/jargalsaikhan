@@ -20,8 +20,8 @@
                         <div class="row">
                             <div class="col-sm-3">Контент</div>
                             <div class="col-sm-9">
-                                <div style="php ">
-                                    {{ $video->embed_code }}
+                                <div class="embed-container">
+                                    {!! $video->embed_code !!}
                                 </div>
                             </div>
                         </div>
