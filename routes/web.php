@@ -23,7 +23,7 @@ Auth::routes([
 
 // Route::get('/admin','loginController@login' );
 
-Route::get('homepage/', 'HomePageController@index');
+Route::get('/', 'HomePageController@index');
 
 Route::get('admin/', 'admin\PostController@index')->name('admin_home')->middleware('auth');
 Route::group([
