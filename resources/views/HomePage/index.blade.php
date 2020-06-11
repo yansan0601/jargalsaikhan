@@ -42,11 +42,11 @@
     <div class="container">
         <div class="row">
         <div class="col-md-12">
-            <h2>Намтар</h2>
+            <h2 style="padding-top: 20px;">Намтар</h2>
             <span class="btm-bar"></span> 
             <p class="col-md-12 text-center block-center">
             @foreach($about as $about)
-                {!! $about->body !!}
+               {!! $about->body !!}
             @endforeach
             </p>
             </div>
@@ -87,7 +87,7 @@
         <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Мэдээ</h2>
+                <h2 style="padding-top: 20px;">Мэдээ</h2>
                 <span class="btm-bar"></span>
             </div>
             @foreach($posts as $post)
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="modal fade" id="myModal{{$post->id}}">
-            <div class="modal-dialog modal-xl">
+            <div class="modal-dialog modal-lg">
             <div class="modal-content">
             
                 <!-- Modal Header -->
@@ -109,10 +109,10 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
-                <center><img src="{{ asset('images/' . $post->image ) }}" style="width: 400px; height: 400px"></center>
+                <center><img src="{{ asset('images/' . $post->image ) }}" style="width: 300px; height: 300px"></center>
                 
                 <!-- Modal body -->
-                <div class="modal-body">
+                <div class="modal-body p" style="overflow-y:auto;">
                     {!! $post->body !!}
                 </div>
                 
@@ -121,465 +121,35 @@
         </div>
             @endforeach
         </div>
-        <!-- The Modal -->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-            
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <center><img src="images/speaker-1.jpg" style="width: 400px; height: 400px"></center>
-                
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Modal body..
-                </div>
-                
-            </div>
-            </div>
-        </div>
         </div>
     </div>
     <div class="ntInnerSection ntSchedule" id="schedule">
         <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2>Бичлэг</h2>
-                <div class="owl-wrapper2-outer">
-                    <div class="owl-wrapper2" style=""width: 4500px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-1500px, 0px, 0px);">
-                        @foreach($videos as $video)
-                        <div class="owl-item2" style="width: 250px;">
-                            <div class="">
-                                {!! $video->embed_code !!}
-                            </div>
-                        </div>
-                        @endforeach
+                <h2 style="padding-top: 20px;">Бичлэг</h2>
+                <div style="padding-top: 20px;" class="row">
+                    @foreach($videos as $video)
+                    <div class="col-sm-6">
+                        {!!$video->embed_code!!}
                     </div>
+                    @endforeach
+                </div>
+                <div class="pagination_wrapper" style="padding-top: 10px;">
+                    <ul class="pagination justify-content-center">
+                        {{ $videos->appends(['sort' => 'votes'])->links() }}
+                    </ul>
                 </div>
             </div>
         </div>
-        {{-- <div class="row">
-            <div class="col-md-12">
-                <ul class="nav nav-tabs ntScheduleTab">
-                    <li><a data-toggle="tab" href="#day01" class="active">Day 01</a></li>
-                    <li><a data-toggle="tab" href="#day02">Day 02</a></li>
-                    <li><a data-toggle="tab" href="#day03">Day 03</a></li>
-                    <li><a class="ntBtnDownloadSchedule" href="#">Download Full Schedule </a></li>
-                </ul>
-                <div class="tab-content ntTabContent">
-                    <div id="day01" class="tab-pane fade in active show">
-                    <div class="ntEvent">
-                        <div class="ntEventTime">08:30 <span></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Registration</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">09:00 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Gathering & Welcome Speech</h3>
-                            <div class="tnSpeakerName"><strong>David</strong><br>Founder of Edilta</div>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-1.jpg" alt="speaker 1"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Successful Marketing Strategy</h3>
-                            <p class="tnSpeakerName"><strong>Mark</strong><br>Founder of Creative Agency</p>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-2.jpg" alt="speaker 2"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Getting Back Into The Deliverables Business</h3>
-                            <p class="tnSpeakerName"><strong>Robin Meany</strong><br>Senior manager</p>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-3.jpg" alt="speaker 3"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent">
-                        <div class="ntEventTime">13:00 <span></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Networking Break</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">14:30 - 15:45 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Workshop: Successful Marketing Strategy</h3>
-                            <p class="tnSpeakerName"><strong>Samantha Jonson</strong><br>Founder of Creative Agency </p>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-4.jpg" alt="speaker 4"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank" class="icoTwitter"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank" class="icoLinkedin"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="day02" class="tab-pane fade">
-                    <div class="ntEvent">
-                        <div class="ntEventTime">08:30 <span></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Registration</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">09:00 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Gathering & Welcome Speech</h3>
-                            <div class="tnSpeakerName"><strong>David</strong><br>Founder of Edilta</div>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-1.jpg" alt="speaker 1"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank" class="icoFacebook"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank" class="icoTwitter"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank" class="icoLinkedin"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent">
-                        <div class="ntEventTime">13:00 <span></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Lunch Break</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Successful Marketing Strategy</h3>
-                            <p class="tnSpeakerName"><strong>Mark</strong><br>Founder of Creative Agency</p>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-2.jpg" alt="speaker 2"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank" class="icoFacebook"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank" class="icoTwitter"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank" class="icoLinkedin"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">14:30 - 15:45 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Workshop: Successful Marketing Strategy</h3>
-                            <p class="tnSpeakerName"><strong>Samantha Jonson</strong><br>Founder of Creative Agency </p>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-4.jpg" alt="speaker 4"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank" class="icoFacebook"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank" class="icoTwitter"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank" class="icoLinkedin"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div id="day03" class="tab-pane fade">
-                    <div class="ntEvent">
-                        <div class="ntEventTime">15:30 <span></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Tea Time</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent extend">
-                        <div class="ntEventTime">09:00 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Gathering & Welcome Speech</h3>
-                            <div class="tnSpeakerName"><strong>David</strong><br>Founder of Edilta</div>
-                            <div class="ntCaption">
-                                <div class="ntImage">
-                                <img src="images/speaker-1.jpg" alt="speaker 1"/> 
-                                <div class="ntSocialIcons"><a href="#0" target="_blank" class="icoFacebook"><i class="fab fa-facebook-f"></i></a> <a href="#0" target="_blank" class="icoTwitter"><i class="fab fa-twitter"></i></a> <a href="#0" target="_blank" class="icoLinkedin"><i class="fab fa-linkedin-in"></i></a></div>
-                                </div>
-                                <div class="ntCaptionText">
-                                <p>Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="ntEvent">
-                        <div class="ntEventTime">16:00 <span></span></div>
-                        <div class="tnEventInfo">
-                            <h3>Closing Remarks</h3>
-                            <hr>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
         </div>
     </div>
-    {{-- <div class="ntInnerSection ntSponsorship" id="sponsorship">
-        <a href="#sponsorship" class="scroll ntWayPoint"><i class="fas fa-angle-down"></i> </a> 
-        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Sponsorship</h2>
-                <span class="btm-bar"></span> 
-                <div class="col-md-10 ntSubTitle block-center">The Event4 Conference has a variety of ticket types to suit the variety of designers out there. Find out the best option for you and your team! </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-4">
-                <div class="ntPackages">
-                    <div class="ntPackagesSuperTitle">
-                    <h4>Silver Sponsor</h4>
-                    <h3><i class="fas fa-dollar-sign"></i>25,000</h3>
-                    <span>5 member can attend</span>
-                    </div>
-                    <div class="ntPackagesDetails">
-                    <ul>
-                        <li><b>Company logo</b> at the main reception</li>
-                        <li><b>Opportunity</b> to have your advertisement</li>
-                        <li><b>Company logo</b> on presentation screens</li>
-                        <li><b>Opportunity</b> to distribute corporate</li>
-                    </ul>
-                    <a href="#0" class="btn btn-ntPrimaryBorder ntMedium">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-4">
-                <div class="ntPackages">
-                    <div class="ntPackagesSuperTitle">
-                    <h4>Gold Sponsor</h4>
-                    <h3><i class="fas fa-dollar-sign"></i>35,000</h3>
-                    <span>10 member can attend</span>
-                    </div>
-                    <div class="ntPackagesDetails">
-                    <ul>
-                        <li><b>Company logo</b> at the main reception</li>
-                        <li><b>Opportunity</b> to have your advertisement</li>
-                        <li><b>Company logo</b> on presentation screens</li>
-                        <li><b>Opportunity</b> to distribute corporate</li>
-                    </ul>
-                    <a href="#0" class="btn btn-ntPrimaryBorder ntMedium">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-4">
-                <div class="ntPackages">
-                    <div class="ntPackagesSuperTitle">
-                    <h4>Platinum Sponsor</h4>
-                    <h3><i class="fas fa-dollar-sign"></i>50,000</h3>
-                    <span>20 member can attend</span>
-                    </div>
-                    <div class="ntPackagesDetails">
-                    <ul>
-                        <li><b>Company logo</b> at the main reception</li>
-                        <li><b>Opportunity</b> to have your advertisement</li>
-                        <li><b>Company logo</b> on presentation screens</li>
-                        <li><b>Opportunity</b> to distribute corporate</li>
-                    </ul>
-                    <a href="#0" class="btn btn-ntPrimaryBorder ntMedium">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div> --}}
-    {{-- <div class="ntInnerSection ntSponsors" id="sponsors">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Sponsors & Partners</h2>
-                <span class="btm-bar"></span> 
-                <div class="col-md-10 ntSubTitle block-center">We wouldn't be able to host our conference without help from these amazing companies. A huge thanks to all our sponsors and partners! </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-1.png" alt="logo-event-1"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-2.png" alt="logo-event-2"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-3.png" alt="logo-event-3"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-4.png" alt="logo-event-4"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-5.png" alt="logo-event-5"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-1.png" alt="logo-event-1"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-2.png" alt="logo-event-2"/></div>
-                    </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="ntSponsorList">
-                    <a href="#0">
-                        <div class="btImage"><img src="images/logo-event-3.png" alt="logo-event-3"/></div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div> --}}
-    {{-- <div class="ntInnerSection ntRegister" id="register">
-        <a href="#register" class="scroll ntWayPoint"> <i class="fas fa-angle-down"></i> </a> 
-        <div class="ntRegisterTitle">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3><b>ONLY 300 AVAILABLE SEATS </b> Register early to guarantee your attendance </h3>
-                    <span class="btm-bar-white"></span> 
-                    <p>This is an exclusive event for professionals. Complete the online form to register your interest and you will receive an email acknowledging your registration.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div> --}}
-    {{-- <div class="ntInnerSection ntRegisterForm">
-        <div class="container">
-        <h2>Register Now</h2>
-        <span class="btm-bar"></span> 
-        <div class="col-md-10 ntSubTitle block-center">A limited number of passes are now available for $150 ex. VAT, but for a shot time only. Register now and we'll contact you with more details when it's time to complete your registration. </div>
-        <form action="php/form.php" method="post" id="registerForm">
-            <div class="row">
-                <div class="col-md-6"><input type="text" name="reg_name" placeholder="Full Name" required/></div>
-                <div class="col-md-6"><input type="text" name="reg_jobtitle" placeholder="Job Title" required/></div>
-                <div class="col-md-6"><input type="email" name="reg_email" placeholder="Email" required/></div>
-                <div class="col-md-6"><input type="text" name="reg_company" placeholder="Company Name" required/></div>
-                <div class="col-md-6"><input type="tel" name="reg_contact" placeholder="Contact No" required></div>
-                <div class="col-md-6"><input type="number" name="reg_quantity" placeholder="Quantity" required/></div>
-                <div class="col-md-12 arrow">
-                    <select name="reg_attend" required>
-                    <option disabled selected value="">I will attend</option>
-                    <option value="Workshop">Workshop</option>
-                    <option value="Conference">Conference</option>
-                    <option value="Workshop + Conference">Workshop + Conference</option>
-                    </select>
-                </div>
-                <div class="col-md-12">
-                    <div class="ntSubmit"> <button type="submit" class="btn btn-ntPrimaryFull ntMedium">Register Now</button> <button type="reset" class="btn btn-ntPrimaryBorder ntMedium">Clear</button> </div>
-                </div>
-            </div>
-        </form>
-        </div>
-    </div> --}}
-    {{-- <div class="ntContact" id="contact">
-        <div class="ntContactDetails">
-        <h2>Copenhagen,<br>Conference <br>hall</h2>
-        <span class="line"></span> 
-        <div class="ntSubTitle">Events are held in the Main hall, workshops in Second floor meeting rooms</div>
-        <h5>Address</h5>
-        <p>Times Square, Suite 3301, New York</p>
-        <h5>Phone</h5>
-        <p>+1 212 619 5200</p>
-        <h5>Email</h5>
-        <p>info@example.com</p>
-        </div>
-        <div id="map"></div>
-        <div class="ntSubscribe">
-        <div class="form">
-            <img src="images/curve-left.svg" class="ntSubscribeLeft" alt="curve-left"/> 
-            <form action="#" method="post"><input type="email" name="email" value="Your Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/> <button type="submit">notify</button> </form>
-            <img src="images/curve-right.svg" class="ntSubscribeRight" alt="curve-right"/>
-        </div>
-        </div>
-    </div> --}}
-    {{-- <div class="ntInnerSection ntCommunity">
-        <div class="container">
-        <div class="col-md-12">
-            <h2>Join Our Community</h2>
-            <span class="btm-bar-white"></span> 
-            <div class="ntSubTitle col-md-8">At Event4 2018 we create experiences everyday. Join our community and feel free to reach out to us via our social profiles </div>
-            <ul class="ntSocialIcons">
-                <li><a href="#0" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#0" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#0" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                <li><a href="#0" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#0" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#0" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-        </div>
-    </div> --}}
     <footer class="ntInnerSection" style="background-color: #f87b07">
         <div class="container">
         <div class="col-md-12">
             <div class="row">                  
                 <div>
+                    <br>
                     <h3 style="color: white">Холбоо барих</h3><br>
                     
                     <div class="row">

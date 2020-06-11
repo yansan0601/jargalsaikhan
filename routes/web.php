@@ -13,15 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Welcome');
-});
 Auth::routes([
     'register' => false
 ]);
-
-
-// Route::get('/admin','loginController@login' );
 
 Route::get('/', 'HomePageController@index');
 
