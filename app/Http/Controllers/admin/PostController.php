@@ -68,11 +68,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        $menu_active=4;
-        $post=Post::findOrFail($id);
-        return view('admin.posts.edit',compact('menu_active','post'));
+        return view('admin.posts.edit',compact('post'));
     }
 
     /**
@@ -82,20 +80,29 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        $update_coupon=Coupon_model::findOrFail($id);
         $this->validate($request,[
-            'coupon_code'=>'required|min:5|max:15|unique:coupons,coupon_code,'.$update_coupon->id,
-            'amount'=>'required|numeric|between:1,99',
-            'expiry_date'=>'required|date'
+            'title'=>'required',
+            'body'=>'required',
         ]);
-        $input_data=$request->all();
-        if(empty($input_data['status'])){
-            $input_data['status']=0;
+        if (!$request->hasFile('image'))
+        {
+            $post->title = $request->title;
+            $post->body = $request->body;
+            $post->save();
         }
-        $update_coupon->update($input_data);
-        return redirect()->route('coupon.index')->with('message','Edit Coupon Already!');
+        else{
+            $input_data = $request->all();
+            $imageName = time().'.'.$request->image->extension();  
+   
+            $request->image->move('images', $imageName);
+            $input_data['image'] = "".$imageName;
+            $post->update($input_data);
+        }
+
+        
+        return redirect()->route('posts.show', $post->id)->with('message','Мэдээ амжилттай засагдлаа');
     }
 
     /**

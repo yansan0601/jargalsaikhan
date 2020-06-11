@@ -1,8 +1,8 @@
 @extends('layouts.admin.app')
-@section('title','Намтар засах')
+@section('title','Мэдээ засах')
 @section('content')
 
-<form action="{{ route('about.update',$about->id) }}" method="POST">
+<form action="{{ route('posts.update',$post->id) }}" method="POST",  enctype="multipart/form-data" files= "true">
     @csrf  
 
     @method('PUT')  
@@ -18,8 +18,20 @@
               </div>
               <div class="card-body">
               @include('layouts.admin.errors')
+              <div class="form-group">
+                  <label> Зураг </label>
+                  <img src="{{ asset('images/' . $post->image ) }}", style="width:80px;height:80px; margin-left: 10px; margin-bottom: 10px"> 
+                  <input type="file" name="image" value="{{ $post->image }}" class="form-control">
+                </div>
+
                 <div class="form-group">
-                  <input type="text" name="body" value="{{$about->body}}" class="form-control">
+                  <label> Гарчиг </label>
+                  <input type="text" name="title" value="{{$post->title}}" class="form-control" placeholder="Гарчиг">
+                </div>
+
+                <div class="form-group">
+                  <label> Контент </label>
+                  <textarea id="body" name="body">{{$post->body}}</textarea>
                 </div>
               <div class="card-footer text-right">
                 <input type="submit" value= "Засах" class= "btn btn-secondary" %>
