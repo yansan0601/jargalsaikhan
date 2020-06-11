@@ -14,7 +14,7 @@ class HomePageController extends Controller
     {
         $about=About::all();
         $posts=Post::all();
-        $videos=Video::all();
+        $videos=Video::orderBy('created_at','desc')->paginate(2);
         return view('homepage.index',compact('about', 'posts', 'videos'));
     }
 
