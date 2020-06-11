@@ -21,6 +21,7 @@
 
                 <div class="form-group">
                   <label> Зураг </label>
+                  <p>Зурагны хэмжээ 400x400 байх ёстой.</p>
                   <input type="file" name="image" class="form-control">
                 </div>
 
