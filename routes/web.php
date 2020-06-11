@@ -32,4 +32,3 @@ Route::group([
     Route::resource('/about','AboutController');
     Route::resource('/videos','VideoController');
 });
-});
