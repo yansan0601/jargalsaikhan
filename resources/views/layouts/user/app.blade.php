@@ -15,7 +15,7 @@
       <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.css"/>
       <link rel="stylesheet" type="text/css" href="css/animate.css"/>
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600%7CRaleway:300,400,500,600,700,800" rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
       
    </head>
    <body>
