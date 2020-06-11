@@ -17,11 +17,6 @@
                             <li><a href="#schedule" class="scroll">Бичлэг</a></li>
                             <li><a href="#contact" class="scroll">Холбоо барих</a></li>
                             <li><a href="/login">Нэвтрэх</a></li>
-                            {{--<li><a href="#register" class="scroll">Register</a></li>
-                            <li><a href="#schedule" class="scroll">Холбоо барих</a></li>
-                            {{-- <li><a href="#sponsors" class="scroll">Sponsors</a></li>
-                            <li><a href="#register" class="scroll">Register</a></li>
-                            <li><a href="#contact" class="scroll">Contact</a></li> --}}
                         </ul>
                     </div>
                     </nav>
@@ -36,9 +31,9 @@
             <p>2020 оны УИХ-н сонгуулийн 26-р тойрог, Баянгол дүүргээс нэр дэвшигч</p>
         </div>
         </div>
-        <a href="#about" class="scroll ntWayPoint"><i class="fas fa-angle-down bounce animated"></i></a>
+        <a href="#about"  id="about" class="scroll ntWayPoint"><i class="fas fa-angle-down bounce animated"></i></a>
     </div>
-    <div class="ntInnerSection ntAbout" id="about">
+    <div class="ntInnerSection ntAbout">
     <div class="container">
         <div class="row">
         <div class="col-md-12">
@@ -68,7 +63,7 @@
         </div>
     </div>
     </div>
-    <div class="ntInnerSection ntRegister" id="register">
+    <div class="ntInnerSection ntRegister">
     <a href="#register" class="scroll ntWayPoint"> <i class="fas fa-angle-down"></i> </a> 
     <div class="ntRegisterTitle">
         <div class="container">
@@ -76,14 +71,14 @@
                 <div class="col-md-12">
                 <h3><b>МОНГОЛ УЛСАД ЦОО ШИНЭ ИНЖЕНЕРЧЛЭЛ ХИЙХ ЦАГ НЬ БОЛСОН... </b> </h3>
                     {{-- Register early to guarantee your attendance  --}}
-                <span class="btm-bar-white"></span> 
+                <span class="btm-bar-white" id="speakers"></span> 
                 {{-- <p>This is an exclusive event for professionals. Complete the online form to register your interest and you will receive an email acknowledging your registration.</p> --}}
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div class="ntInnerSection ntSpeaker" id="speakers">
+    <div class="ntInnerSection ntSpeaker">
         <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -123,16 +118,17 @@
         </div>
         </div>
     </div>
-    <div class="ntInnerSection ntSchedule" id="schedule">
+    <div class="ntInnerSection ntSchedule">
         <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 style="padding-top: 20px;">Бичлэг</h2>
-                <div style="padding-top: 20px;" class="row embed-container-list">
+                <h2 id="schedule" style="padding-top: 20px;">Бичлэг</h2>
+                <div style="padding-top: 20px;" class="row">
                     @foreach($videos as $video)
-                    
                     <div class="col-sm-6">
-                        {!!$video->embed_code!!}
+                        <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 2%">
+                            {!!$video->embed_code!!}
+                        </div>
                     </div>
                     @endforeach
                 </div>
@@ -145,7 +141,7 @@
         </div>
         </div>
     </div>
-    <footer class="ntInnerSection" style="background-color: #f87b07">
+    <footer id="contact" class="ntInnerSection" style="background-color: #f87b07">
         <div class="container">
         <div class="col-md-12">
             <div class="row">                  
