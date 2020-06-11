@@ -569,14 +569,12 @@ pre code {
 }
 
 .container {
-  margin-left: 600px;
-  width: 60%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: auto;
 }
 
 @media (min-width: 576px) {
   .container {
+    justify-content: center;
     max-width: 540px;
   }
 }
@@ -1781,7 +1779,6 @@ pre code {
     .card{
       width: 310px;
       height: 410px;
-      margin-left: -300px;
     }
     .form-control{
       width: 100%;
@@ -1794,13 +1791,9 @@ pre code {
 
 
 @media (max-width: 2560px) {
-  .container{
-    justify-content: center;
-  }
   .card{
     width: 310px;
     height: 410px;
-    margin-left: -300px;
   }
   .form-control{
     width: 100%;
@@ -1818,7 +1811,6 @@ pre code {
   .card{
     width: 310px;
     height: 410px;
-    margin-left: -300px;
   }
   .form-control{
     width: 100%;
@@ -1832,7 +1824,6 @@ pre code {
     .card{
       width: 310px;
       height: 410px;
-      margin-left: -300px;
     }
     .form-control{
       width: 100%;
@@ -1848,7 +1839,7 @@ pre code {
   .card{
     width: 310px;
     height: 410px;
-    margin-left: -100px;
+
   }
   .form-control{
     width: 100%;
@@ -1885,6 +1876,111 @@ pre code {
   }
 }
 
+@media (max-width: 1920px) {
+  .card{
+    width: 310px;
+    height: 410px;
+
+  }
+  .form-control{
+    width: 100%;
+    height: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .card{
+    width: 310px;
+    height: 410px;
+  }
+  .form-control{
+    width: 100%;
+    height: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .card{
+    width: 310px;
+    height: 410px;
+
+  }
+  .form-control{
+    width: 100%;
+    height: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card{
+    width: 310px;
+    height: 410px;
+  }
+  .form-control{
+    width: 100%;
+    height: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .card{
+    width: 310px;
+    height: 410px;
+  }
+  .form-control{
+    width: 100%;
+    height: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card{
+    width: 310px;
+    height: 410px;
+
+  }
+  .form-control{
+    width: 100%;
+    height: 60px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
     display: block;
@@ -1913,7 +2009,7 @@ pre code {
 .form-control {
   margin-left: 60px;
   margin-right: 60px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', ;
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
@@ -2439,7 +2535,6 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   margin-left: -90px;
-  box-shadow: 10px 10px 5px #aaaaaa;
 	border: 1px solid #dd4b39;;
 	cursor: pointer;
 	font-family: 'Roboto', sans-serif;
@@ -4214,6 +4309,56 @@ input[type="button"].btn-block {
   }
 }
 
+@media (max-width: 707px) {
+  .card{
+    width: 310px;
+    height: 410px;
+    }
+  .form-control{
+    width: 100%;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 529px) {
+  .card{
+    width: 310px;
+    height: 410px;
+  }
+  .form-control{
+    width: 100%;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  .btn-primary{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 718px) {
+  .card{
+    width: 310px;
+    height: 410px;
+
+  }
+  .form-control{
+    width: 100%;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+  }
+}
+
+
 @media (max-width: 767.98px) {
   .btn-primary {
     margin-left: 60px; 
@@ -4484,8 +4629,8 @@ input[type="button"].btn-block {
 }
 
 .card {
+  height: 300px;
   margin-top: 20%;
-  box-shadow: 2h0px 20px 10px #aaaaaa;
 	background-color: #fff;
   border-radius: 8px; 
   text-align: center;
@@ -8918,70 +9063,49 @@ button.bg-dark:focus {
 
 @media (max-width: 360px) {
   .card{
-    margin-top: 80px;
     width: 310px;
-    margin-left: -115px;
-  }
-  .form-control{
-    width: 70%;
-    margin-left: 45px;
-  }
-  .btn-primary{
-    margin-left: 0px;
-    width: 210px;
-  }
-}
+    height: 410px;
 
-@media (max-width: 411px) {
-  .card{
-    margin-top: 80px;
-    width: 310px;
-    margin-left: -110px;
-  }
-  .form-control{
-    width: 70%;
-    margin-left: 45px;
-  }
-  .btn-primary{
-    margin-left: 0px;
-    width: 210px;
-  }
-}
-
-@media (max-width: 414px) {
-  .card{
-    margin-top: 80px;
-    width: 310px;
-    margin-left: -110px;
   }
   .form-control{
     width: 100%;
+    height: 40px;
     margin-right: 40px;
     margin-left: 40px;
-    
-  }
-  .btn-primary{
-    margin-left: 0px;
-    width: 220px;
-  }
-}
 
+  }
+
+  .btn-primary{
+    margin-right: -300px;
+  }
+
+@media (max-width: 414px) {
+  .card{
+    width: 310px;
+    height: 410px;
+
+  }
+  .form-control{
+    width: 100%;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+  }
 
 @media (max-width: 375px) {
   .card{
     margin-top: 80px;
     width: 310px;
-    margin-left: -115px;
+
   }
   .form-control{
-    width: 100%;
-    margin-right: 40px;
-    margin-left: 40px;
-    
+    width: 70%;
+    margin-left: 45px;
   }
   .btn-primary{
     margin-left: 0px;
-    width: 220px;
+    width: 210px;
   }
 }
 
