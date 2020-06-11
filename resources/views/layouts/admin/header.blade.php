@@ -20,16 +20,12 @@
 
 <aside class="main-sidebar sidebar-dark-info elevation-1 darkBlue">
   <a href="{{route('admin_home')}}" class= 'brand-link text-center'>
-    <span class="brand-text font-weight-light"><b>Админ</b><p>удирдах цонх</p></span>
+    <span><b>Админ</b><p style="margin-bottom: 0px">Удирдах цонх</p></span>
   </a>
 
   <div class="sidebar">
     <nav>
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item navItemHead py-3 pl-2">
-          <span><i class="fa fa-bars"></i> Navigation</span>
-        </li>
-
         <li class="nav-item">
           <a href="{{route('posts.index')}}" class="nav-link">
             <i class="nav-icon fa fa-newspaper-o"></i>
@@ -46,17 +42,11 @@
 
         <li class="nav-item">
           <a href="{{route('videos.index')}}" class="nav-link">
-            <i class="nav-icon fa fa-graduation-cap"></i>
+            <i class="nav-icon fa fa-video-camera"></i>
             <p>Бичлэг</p>
           </a>
         </li>
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fa fa-newspaper-o"></i>
-            <p>Санал хүсэлт</p>
-          </a>
-        </li>
+        
         <li class="mt-4 p-2"><a class= "btn btn-sm btn-block btn-danger text-white" >LogOut</a></li>
       </ul>
     </nav>
