@@ -80,7 +80,7 @@ class VideoController extends Controller
             'embed_code'=>'required'
         ]);
         $video->update($request->all());
-        return redirect()->route('videos.index')->with('message','Бичлэг амжилттай засагдлаа');
+        return redirect()->route('videos.show',  $video->id)->with('message','Бичлэг амжилттай засагдлаа');
     }
 
     /**
