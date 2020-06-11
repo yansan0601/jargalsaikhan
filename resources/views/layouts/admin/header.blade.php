@@ -9,7 +9,7 @@
     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-        <i class="fa fa-sign-out mr-2" aria-hidden="true"></i><span class="d-none d-sm-inline">Logout</span>
+        <i class="fa fa-sign-out mr-2" aria-hidden="true"></i><span class="d-none d-sm-inline">Гарах</span>
         </a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
@@ -49,7 +49,7 @@
         <a class="btn btn-sm btn-block btn-danger text-white" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
-        <i class="fa fa-sign-out p-2" aria-hidden="true"></i><span class="d-none d-sm-inline">Logout</span>
+        <i class="fa fa-sign-out p-2" aria-hidden="true"></i><span class="d-none d-sm-inline">Гарах</span>
         </a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf

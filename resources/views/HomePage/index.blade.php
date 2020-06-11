@@ -51,19 +51,19 @@
             </p>
             </div>
             <div class="col-md-4 ntAboutThumb">
-                <img src="images/about-1.jpg" alt="about-1"/> 
-                <h3>ЗАЛУУЧУУДАА ДЭМЖЬЕ</h3>
-                <p>Lorem</p>
+                <img src="images/about-1.png" alt="about-1"/> 
+                {{-- <h3>ЗАЛУУЧУУДАА ДЭМЖЬЕ</h3>
+                <p>Lorem</p> --}}
             </div>
             <div class="col-md-4 ntAboutThumb">
-                <img src="images/about-2.jpg" alt="about-2"/> 
-                <h3>АЖ ҮЙЛДВЭРЭЭ ХӨГЖҮҮЛЬЕ</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <img src="images/about-2.png" alt="about-2"/> 
+                {{-- <h3>АЖ ҮЙЛДВЭРЭЭ ХӨГЖҮҮЛЬЕ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p> --}}
             </div>
             <div class="col-md-4 ntAboutThumb">
-                <img src="images/about-3.jpg" alt="about-3"/> 
-                <h3>ШИНЭ ИРЭЭДҮЙ</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa.</p>
+                <img src="images/about-3.png" alt="about-3"/> 
+                {{-- <h3>ШИНЭ ИРЭЭДҮЙ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa.</p> --}}
             </div>
         </div>
     </div>
@@ -128,14 +128,15 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2 style="padding-top: 20px;">Бичлэг</h2>
-                <div style="padding-top: 20px;" class="row">
+                <div style="padding-top: 20px;" class="row embed-container-list">
                     @foreach($videos as $video)
+                    
                     <div class="col-sm-6">
                         {!!$video->embed_code!!}
                     </div>
                     @endforeach
                 </div>
-                <div class="pagination_wrapper" style="padding-top: 10px;">
+                <div class="pagination_wrapper" style="padding-top: 10px">
                     <ul class="pagination justify-content-center">
                         {{ $videos->appends(['sort' => 'votes'])->links() }}
                     </ul>
