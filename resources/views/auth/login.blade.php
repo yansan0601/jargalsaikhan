@@ -1,15 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-<body class="body1">
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card" style="box-shadow: 10px 10px 5px #aaaaaa; wid">
-                <div class="card-header"><h2 class="h2">АДМИН</h2></div>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+
+    <body class="body1 d-flex justify-content-center"> 
+<div class="container d-flex justify-content-center">
+            <div class="card shadow-lg">
+                <div class="card-header"><h2 class="h2">АДМИН</h2></div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -40,7 +41,7 @@
 
                         <div class="form-group row mb-center">
                             <div class="col-md-center offset-md-6">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary shadow-lg">
                                     {{ __('НЭВТРЭХ') }}
                                 </button>
 
