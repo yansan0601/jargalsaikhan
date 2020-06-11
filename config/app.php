@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Login'),
 
     /*
     |--------------------------------------------------------------------------
@@ -228,10 +228,4 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-    // ... Providers array ...
-    Cohensive\Embed\EmbedServiceProvider::class,
-
-    // ... Aliases array ...
-    'Embed' => Cohensive\Embed\Facades\Embed::class
-
 ];

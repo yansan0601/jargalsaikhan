@@ -18,6 +18,9 @@
                               <li><a href="#about" class="scroll">Намтар</a></li>
                               <li><a href="#speakers" class="scroll">Мэдээ</a></li>
                               <li><a href="#schedule" class="scroll">Бичлэг</a></li>
+                              <li><a href="#contact" class="scroll">Холбоо барих</a></li>
+                              <li><a href="/login">Нэвтрэх</a></li>
+                              {{--<li><a href="#register" class="scroll">Register</a></li>
                               <li><a href="#schedule" class="scroll">Холбоо барих</a></li>
                               {{-- <li><a href="#sponsors" class="scroll">Sponsors</a></li>
                               <li><a href="#register" class="scroll">Register</a></li>
@@ -50,7 +53,7 @@
               <div class="col-md-4 ntAboutThumb">
                  <img src="images/about-1.jpg" alt="about-1"/> 
                  <h3>ЗАЛУУЧУУДАА ДЭМЖЬЕ</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                 <p>Lorem</p>
               </div>
               <div class="col-md-4 ntAboutThumb">
                  <img src="images/about-2.jpg" alt="about-2"/> 
@@ -71,9 +74,10 @@
            <div class="container">
               <div class="row">
                  <div class="col-md-12">
-                    <h3><b>ONLY 300 AVAILABLE SEATS </b> Register early to guarantee your attendance </h3>
+                    <h3><b>МОНГОЛ УЛСАД ЦОО ШИНЭ ИНЖЕНЕРЧЛЭЛ ХИЙХ ЦАГ НЬ БОЛСОН... </b> </h3>
+                     {{-- Register early to guarantee your attendance  --}}
                     <span class="btm-bar-white"></span> 
-                    <p>This is an exclusive event for professionals. Complete the online form to register your interest and you will receive an email acknowledging your registration.</p>
+                    {{-- <p>This is an exclusive event for professionals. Complete the online form to register your interest and you will receive an email acknowledging your registration.</p> --}}
                  </div>
               </div>
            </div>
@@ -176,10 +180,10 @@
                         <div class="item active">
                            <div class="row">
                               <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
-                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgxr1H79UqA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgxr1H79UqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
                               </div>
                               <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
-                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/LMQxDocJFLg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/LMQxDocJFLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
                               </div>
                            </div>
                         </div>
@@ -187,10 +191,10 @@
                         <div class="item">
                            <div class="row">
                               <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
-                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgxr1H79UqA?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qgxr1H79UqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
                               </div>
                               <div class="col-md-6 d-flex ftco-animate fadeInUp ftco-animated">
-                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/LMQxDocJFLg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+                                 <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/LMQxDocJFLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
                               </div>
                            </div>
                         </div>

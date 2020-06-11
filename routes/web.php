@@ -14,10 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Welcome');
 });
+Auth::routes([
+    'register' => false
+]);
 
-Route::get('admin/', 'admin\PostController@index')->name('admin_home');
+
+// Route::get('/admin','loginController@login' );
+
+Route::get('admin/', 'admin\PostController@index')->name('admin_home')->middleware('auth');
 Route::group([
     'namespace' => 'admin', 
     'prefix' => 'admin'
@@ -25,4 +31,5 @@ Route::group([
     Route::resource('/posts','PostController');
     Route::resource('/about','AboutController');
     Route::resource('/videos','VideoController');
+});
 });

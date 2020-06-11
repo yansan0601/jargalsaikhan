@@ -4,7 +4,6 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1.85em;
-	font-family: 'Poppins', sans-serif;
 	color: #242732;
 }
 
@@ -285,7 +284,6 @@ span.btm-bar-white {
 	background: url('../images/bar-white.png') no-repeat;
 	width: 130px;
 	height: 17px;
-	display: block;
 	overflow: hidden;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -1186,19 +1184,18 @@ ul.ntScheduleTab li a {
 	z-index: 1;
 	text-align: center;
 	color: #fff;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 .ntRegister h3>b {
 	display: block;
 	font-size: 40px;
-	font-weight: 900;
+	font-weight: 800;
 }
 
 .ntRegister h3 {
 	text-align: center;
 	font-size: 23px;
-	line-height: 34px;
 	font-weight: 100;
 }
 
@@ -1602,6 +1599,61 @@ footer .foot-logo {
 /* Laptop */
 
 @media screen and (max-width: 1024px) {
+
+	.body1{
+		
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 600px;
+		width: 690px; 
+		border-radius: 8px; 
+		margin-left: 150px; 
+		margin-top: 100px;
+		text-align: center;
+	}
+	.form-control{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 80px; 
+		width: 430px; 
+		font-size: 35px;
+		border-radius: 3px;
+		margin-top: 20px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 80px; 
+		width: 430px; 
+		font-size: 35px;
+		border-radius: 3px;
+		margin-top: 40px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		cursor: pointer;
+		width: 430px; 
+		height: 80px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 30px;
+	}
+
+	.h2{
+		font-family: 'Times New Roman', Times, serif;
+		color: #ED4C67;
+		font-size: 50px;
+	}
+	.fa-warning{
+		margin-left: 100px;
+		width: 430px;
+		font-size: 30px;
+	}
 	.cd-nav-trigger {
 		display: block;
 	}
@@ -1711,7 +1763,110 @@ footer .foot-logo {
 
 /* Tablet (portrait) */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
+	.body1{
+		
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 500px;
+		width: 600px; 
+		border-radius: 8px; 
+		margin-left: 80px; 
+		margin-top: 100px;
+		text-align: center;
+	}
+	.form-control{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 60px; 
+		width: 400px; 
+		font-size: 25px;
+		border-radius: 3px;
+		margin-top: 20px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 60px; 
+		width: 400px; 
+		font-size: 20px;
+		border-radius: 3px;
+		margin-top: 40px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		cursor: pointer;
+		width: 400px; 
+		height: 60px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 35px;
+	}
+
+	.fa-warning{
+		margin-left: 70px;
+	}
+
+	.h2{
+		font-family: 'Roboto', sans-serif;
+		color: #ED4C67;
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.body1{
+		width: 360px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 280px;
+		width: 315px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 30px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 30px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 20px;
+	}
+
+	.h2{
+		color: #ED4C67;
+		font-size: 30px;
+	}
 	/* community */
 	.ntCommunity ul.ntSocialIcons {
 		width: 83%;
@@ -1834,11 +1989,210 @@ footer .foot-logo {
 	}
 }
 
+@media screen and (max-width: 414px) {
+	.body1{
+		width: 414px;
+		height: 100%;
+		
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 320px;
+		width: 370px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		margin-top: -20px;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 20px;
+	}
+
+	.h2{
+		font-family: 'Roboto', sans-serif;
+		color: #ED4C67;
+		font-size: 30px;
+	}
+	.fa-warning{
+		font-size: 20px;
+		width: 240px;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.body1{
+		width: 375px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 320px;
+		width: 315px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		margin-top: -20px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 20px;
+	}
+
+	.h2{
+		color: #ED4C67;
+		font-size: 30px;
+	}
+	.fa-warning{
+		margin-left: -5px;
+		width: 240px;
+		font-size: 20px;
+	}
+}
+
 
 /* Mini-Mobile */
 
+@media screen and (max-width: 360px) {
+	.body1{
+		width: 360px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 320px;
+		width: 315px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 150px;
+		text-align: center;
+	}
+	.form-control{
+		margin-top: -30px;
+		font-family: 'Roboto', sans-serif;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		font-family: 'Roboto', sans-serif;
+		margin-top: 30px;
+		border: 1px solid gray;
+		height: 40px; 
+		width: 240px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		font-family: 'Roboto', sans-serif;
+		background-color: #ED4C67; 
+		width: 240px; 
+		height: 40px; 
+		border: 1px solid #ED4C67;
+		border-radius: 3px; 
+		color: #fff; 
+		font-size: 18px;
+	}
+
+	.h2{
+		color: #ED4C67;
+		font-size: 25px;
+	}
+}
+
 @media screen and (max-width: 320px) {
 	/* main title */
+	.body1{
+		width: 320px;
+	}
+	
+	.card{
+		background-color: #fff;
+		height: 250px;
+		width: 280px; 
+		border-radius: 8px; 
+		margin-left: 20px; 
+		margin-top: 100px;
+		text-align: center;
+	}
+	.form-control{
+		height: 30px; 
+		width: 200px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	.form-control1{
+		margin-top: 20px;
+		height: 30px;
+		width: 200px; 
+		font-size: 20px;
+		border-radius: 3px;
+	}
+	
+	.btn-primary{
+		background-color: #ED4C67; 
+		width: 200px; 
+		height: 40px; 
+		border-radius: 3px; 
+		color: #fff; 
+		font-family: bold;
+	}
+
+	.h2{
+		font-size: 20px;
+	}
 	.mainTitle {
 		width: 88%;
 		left: 17px;
