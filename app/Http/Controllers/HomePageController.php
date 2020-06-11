@@ -15,7 +15,7 @@ class HomePageController extends Controller
         $about=About::all();
         $posts=Post::all();
         $videos=Video::all();
-        return view('HomePage.index',compact('about', 'posts', 'videos'));
+        return view('homepage.index',compact('about', 'posts', 'videos'));
     }
 
 }
