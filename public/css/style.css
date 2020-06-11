@@ -1190,7 +1190,7 @@ ul.ntScheduleTab li a {
 .ntRegister h3>b {
 	display: block;
 	font-size: 40px;
-	font-weight: 800;
+	font-weight: 700;
 }
 
 .ntRegister h3 {
@@ -2276,6 +2276,10 @@ footer .foot-logo {
   animation-duration: 0.6s;
 }
 
+.modal-body p {
+    word-wrap: break-word;
+}
+
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}
@@ -2304,24 +2308,4 @@ footer .foot-logo {
   .modal-content {
     width: 100%;
   }
-}
-.blue{color:#0000ff}
-
-.block-23 ul li .icon {
-    width: 40px;
-    font-size: 18px;
-    padding-top: 2px;
-	color: white;
-}
-.block-23 ul li .icon, .block-23 ul li .text {
-    display: table-cell;
-    vertical-align: top;
-}
-.block-23 ul li span {
-    color: rgba(255, 255, 255, 0.7);
-}
-.block-23 ul li, .block-23 ul li > a {
-    display: table;
-    line-height: 1.5;
-    margin-bottom: 15px;
 }

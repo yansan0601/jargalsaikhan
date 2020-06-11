@@ -46,8 +46,14 @@
             <p>Бичлэг</p>
           </a>
         </li>
-        
-        <li class="mt-4 p-2"><a class= "btn btn-sm btn-block btn-danger text-white" >LogOut</a></li>
+        <a class="btn btn-sm btn-block btn-danger text-white" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+        <i class="fa fa-sign-out p-2" aria-hidden="true"></i><span class="d-none d-sm-inline">Logout</span>
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+        </form>
       </ul>
     </nav>
   </div>
