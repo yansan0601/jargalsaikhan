@@ -17,6 +17,7 @@
               <div class="card-body">
                 @include('layouts.admin.errors')
                 <div class="form-group">
+                  <p>Embed кодоо оруулна уу?</p>
                   <input type="text" name="embed_code" class="form-control" placeholder="Бичлэг">
                 </div>
               <div class="card-footer text-right">

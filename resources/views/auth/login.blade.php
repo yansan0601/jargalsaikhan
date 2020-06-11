@@ -38,8 +38,8 @@
                             </div>
                         </div>--}}
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                        <div class="form-group row mb-center">
+                            <div class="col-md-center offset-md-6">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('НЭВТРЭХ') }}
                                 </button>
