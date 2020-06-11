@@ -114,6 +114,6 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-        return redirect()->route('posts.index')->with('message','амжилттай устгагдлаа');
+        return redirect()->route('posts.index')->with('message','Мэдээ амжилттай устгагдлаа');
     }
 }

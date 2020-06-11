@@ -6,6 +6,7 @@
     <div class="content-header p-2"></div>
       @if(Session::has('message'))
         <div class="alert alert-success text-center" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             {{Session::get('message')}}
         </div>
       @endif
@@ -39,7 +40,7 @@
                               {!!$video->embed_code!!}
                             </div>  
                           </div>
-                          <div class="col-sm-2">Edit</div>
+                          <div class="col-sm-1">Edit</div>
                         </div>
                       </a>
                       <hr/>

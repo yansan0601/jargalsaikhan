@@ -6,6 +6,7 @@
     <div class="content-header p-2"></div>
       @if(Session::has('message'))
         <div class="alert alert-success text-center" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             {{Session::get('message')}}
         </div>
       @endif
@@ -24,7 +25,7 @@
                 </div>
               </div>
 
-              <div class="card-body p-0">
+              <div class="card-body">
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="row list-header">
