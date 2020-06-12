@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{asset('master/plugins/font-awesome/css/font-awesome.css')}}" />
     <link rel="stylesheet" href="{{asset('master/dist/css/adminlte.min.css')}}" />
     <link rel="stylesheet" href="{{asset('master/custom.css')}}" />
-    <link rel="stylesheet" href="{{asset('master/ckeditor/samples/css/samples.css')}}" />
+
     <link rel="stylesheet" href="{{asset('master/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css')}}" />
 
 
