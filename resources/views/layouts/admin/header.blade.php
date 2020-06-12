@@ -26,26 +26,27 @@
   <div class="sidebar">
     <nav>
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
-          <a href="{{route('posts.index')}}" class="nav-link">
+        <li class="nav-item" style="margin-top: 10px">
+          <a href="{{route('posts.index')}}" class="nav-link {{ Route::currentRouteName() == 'posts.index' || Route::currentRouteName() == 'posts.show' || Route::currentRouteName() == 'posts.edit' ?'active':'' }} ">
             <i class="nav-icon fa fa-newspaper-o"></i>
             <p>Мэдээ</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="{{route('about.index')}}" class="nav-link">
+          <a href="{{route('about.index')}}" class="nav-link {{ Route::currentRouteName() == 'about.index' || Route::currentRouteName() == 'about.edit' ? 'active': '' }}">
             <i class="nav-icon fa fa-user"></i>
             <p>Намтар</p>
           </a>
         </li>
 
-        <li class="nav-item">
-          <a href="{{route('videos.index')}}" class="nav-link">
+        <li class="nav-item" style="margin-bottom: 10px">
+          <a href="{{route('videos.index')}}" class="nav-link {{ Route::currentRouteName() == 'videos.index' || Route::currentRouteName() == 'videos.show' || Route::currentRouteName() == 'videos.edit' ?'active':'' }}">
             <i class="nav-icon fa fa-video-camera"></i>
             <p>Бичлэг</p>
           </a>
         </li>
+
         <a class="btn btn-sm btn-block btn-danger text-white" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
