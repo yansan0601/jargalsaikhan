@@ -31,7 +31,7 @@
 
                 <div class="form-group">
                   <label> Контент </label>
-                  <textarea id="body" name="body">{{$post->body}}</textarea>
+                  <textarea id="editor" name="body">{{$post->body}}</textarea>
                 </div>
               <div class="card-footer text-right">
                 <input type="submit" value= "Засах" class= "btn btn-secondary" %>

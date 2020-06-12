@@ -32,7 +32,7 @@
 
                 <div class="form-group">
                   <label> Контент </label>
-                  <textarea id="body" name="body"></textarea>
+                  <textarea id="editor" name="body"></textarea>
                 </div>
 
               </div>
