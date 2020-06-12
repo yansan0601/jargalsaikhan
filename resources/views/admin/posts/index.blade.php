@@ -39,8 +39,8 @@
                       <a href="{{route('posts.show',$post->id)}}">
                         <div class="row list">
                           <div class="col-sm-3"> <img src="{{ asset('images/' . $post->image ) }}" class="custom-img"></div>
-                          <div class="col-sm-3">{{$post->title}}</div>
-                          <div class="col-sm-5">{!! Str::limit($post->body, 50) !!}</div>
+                          <div class="col-sm-3">{{ Str::limit($post->title, 50)}}</div>
+                          <div class="col-sm-5"></div>
                           <div class="col-sm-1"><i class="fa fa-angle-right"></i></div>
                         </div>
                       </a>
