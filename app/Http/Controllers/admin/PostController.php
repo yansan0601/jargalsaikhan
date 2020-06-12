@@ -40,7 +40,7 @@ class PostController extends Controller
         $this->validate($request,[
             'title'=>'required',
             'body'=>'required',
-            'image'=>'required'
+            'image'=>'required|mimes:jpeg,png,jpg,gif,svg'
         ]);
        
         $imageName = time().'.'.$request->image->extension();  
@@ -85,6 +85,7 @@ class PostController extends Controller
         $this->validate($request,[
             'title'=>'required',
             'body'=>'required',
+            'image'=>'image|mimes:jpeg,png,jpg,gif,svg'
         ]);
         if (!$request->hasFile('image'))
         {
