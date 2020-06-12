@@ -20,7 +20,7 @@
                   <textarea id="body" name="body"></textarea>
                 </div>
               <div class="card-footer text-right">
-                <input type="submit" value= "Оруулах" class= "btn btn-secondary" %>
+                <input type="submit" value= "Оруулах" class= "btn btn-secondary" />
               </div>
             </div>
           </div>

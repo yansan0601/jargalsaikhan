@@ -23,7 +23,7 @@
                   <textarea id="editor" name="body">{{$about->body}}</textarea>
                 </div>
               <div class="card-footer text-right">
-                <input type="submit" value= "Засах" class= "btn btn-secondary" %>
+                <input type="submit" value= "Засах" class= "btn btn-secondary" />
               </div>
             </div>
           </div>
