@@ -13,7 +13,7 @@ class HomePageController extends Controller
     public function index()
     {
         $about=About::all();
-        $posts=Post::orderBy('created_at', 'desc')->limit(6)->get();
+        $posts=Post::orderBy('created_at', 'desc')->paginate(6, ['*'], 'page_post');
         $videos=Video::orderBy('created_at','desc')->paginate(2);
         return view('homepage.index',compact('about', 'posts', 'videos'));
     }

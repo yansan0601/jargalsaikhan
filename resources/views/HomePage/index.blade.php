@@ -110,11 +110,18 @@
                 <div class="modal-body p" style="overflow-y:auto;">
                     {!! $post->body !!}
                 </div>
+
+                
                 
             </div>
             </div>
         </div>
             @endforeach
+        </div>
+        <div class="pagination_wrapper" style="padding-top: 10px">
+            <ul class="pagination justify-content-center">
+                {{ $posts->links() }}
+            </ul>
         </div>
         </div>
     </div>
@@ -134,7 +141,7 @@
                 </div>
                 <div class="pagination_wrapper" style="padding-top: 10px">
                     <ul class="pagination justify-content-center">
-                        {{ $videos->appends(['sort' => 'votes'])->links() }}
+                        {{ $videos->links() }}
                     </ul>
                 </div>
             </div>
