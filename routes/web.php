@@ -26,6 +26,7 @@ Route::group([
     'middleware'=>'auth',
 ], function(){
     Route::resource('/posts','PostController');
+    Route::resource('/niitlels','NiitlelController');
     Route::resource('/about','AboutController');
     Route::resource('/videos','VideoController');
 });

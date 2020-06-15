@@ -34,6 +34,13 @@
         </li>
 
         <li class="nav-item">
+          <a href="{{route('niitlels.index')}}" class="nav-link {{ Route::currentRouteName() == 'nittlels.create' || Route::currentRouteName() == 'niitlels.index' || Route::currentRouteName() == 'niitlels.show' || Route::currentRouteName() == 'niitlels.edit' ?'active':'' }} ">
+            <i class="nav-icon fa fa-newspaper-o"></i>
+            <p>Нийтлэл</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a href="{{route('about.index')}}" class="nav-link {{ Route::currentRouteName() == 'about.create' || Route::currentRouteName() == 'about.index' || Route::currentRouteName() == 'about.edit' ? 'active': '' }}">
             <i class="nav-icon fa fa-user"></i>
             <p>Намтар</p>

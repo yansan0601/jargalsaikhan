@@ -13,6 +13,7 @@
                         <ul class="navbar-nav ntNavbar">
                             <li><a href="#home" class="scroll active">Эхлэл</a></li>
                             <li><a href="#about" class="scroll">Намтар</a></li>
+                            <li><a href="#niitlel" class="scroll">Нийтлэл</a></li>
                             <li><a href="#speakers" class="scroll">Мэдээ</a></li>
                             <li><a href="#schedule" class="scroll">Бичлэг</a></li>
                             <li><a href="#contact" class="scroll">Холбоо барих</a></li>
@@ -62,6 +63,50 @@
             </div>
         </div>
     </div>
+    </div>
+    <div class="ntInnerSection ntSpeaker" id="niitlel">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="padding-top: 20px;">Нийтлэл</h2>
+                <span class="btm-bar"></span>
+            </div>
+            @foreach($niitlels as $niitlel)
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="ntOurSpeakersItem">
+                    <img src="{{ asset('images/' . $niitlel->image ) }}" data-toggle="modal" data-target="#myModal{{$niitlel->id}}">
+                    <div class="caption">
+                    <h3>{{$niitlel->title}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal{{$niitlel->id}}">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">{{$niitlel->title}}</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <center><img src="{{ asset('images/' . $niitlel->image ) }}" style="width: 300px; height: 300px"></center>
+                
+                <!-- Modal body -->
+                <div class="modal-body p" style="overflow-y:auto;">
+                    {!! $niitlel->body !!}
+                </div>
+            </div>
+            </div>
+        </div>
+            @endforeach
+        </div>
+        <div class="pagination_wrapper" style="padding-top: 10px">
+            <ul class="pagination justify-content-center">
+                {{ $niitlels->links() }}
+            </ul>
+        </div>
+        </div>
     </div>
     <div class="ntInnerSection ntRegister">
     <a href="#register" class="scroll ntWayPoint"> <i class="fas fa-angle-down"></i> </a> 
